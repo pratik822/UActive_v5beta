@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6FFFF">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/uact"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/buddyup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tv_pickups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="BUDDY UP"
+            android:textColor="#3a445e"
+            android:textSize="26dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_arrs"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            custom:typeface="Brandon_med" />
+
+        <ImageView
+            android:id="@+id/iv_arrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_rht_arrow"
+            tools:ignore="MissingConstraints,RtlCompat" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/running" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Find your workout buddy!"
+            android:textColor="#3a445e"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_pickups"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickups"
+            custom:typeface="Brandon_reg" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="#C1CCD4"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mypickup"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buddyup_layout">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tv_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="PICK UP"
+            android:textColor="#3a445e"
+            android:textSize="26dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_arr"
+            app:layout_constraintHorizontal_bias="0.927"
+            app:layout_constraintStart_toEndOf="@+id/imageView17s"
+            app:layout_constraintTop_toTopOf="parent"
+            custom:typeface="Brandon_med" />
+
+        <ImageView
+            android:id="@+id/iv_arr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_rht_arrow"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView17s"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681"
+            app:srcCompat="@drawable/cycling" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:text="Join or host group activities!"
+            android:textColor="#3a445e"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.765"
+            app:layout_constraintStart_toEndOf="@+id/imageView17s"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pickup"
+            custom:typeface="Brandon_reg" />
+
+        <TextView
+            android:id="@+id/textView14s"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="#C1CCD4"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/rewards_layout"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypickup"
+        app:layout_constraintVertical_bias="0.394">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tv_rewards"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="8dp"
+            android:text="SUPER SOCCER TOURNAMENT"
+            android:textColor="#3a445e"
+            android:textSize="26dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_arrt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideliness"
+            app:layout_constraintTop_toTopOf="parent"
+            custom:typeface="Brandon_med" />
+
+        <ImageView
+            android:id="@+id/iv_arrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView17ss"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_rht_arrow"
+            tools:ignore="MissingConstraints" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideliness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView17ss"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.681"
+            app:srcCompat="@drawable/balls" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#3a445e"
+            app:layout_constraintStart_toStartOf="@+id/tv_rewards"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rewards"
+            custom:typeface="Brandon_reg" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/live_updates_more"
+            android:textColor="#3a445e"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_rewards"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rewards"
+            app:layout_constraintVertical_bias="1.0"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:typeface="Brandon_reg" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="114dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="4dp"
+        android:background="@drawable/item_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintLeft_toLeftOf="parent"
+        custom:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_cityname"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/tv_cityname"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/locatiomyn" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_cityname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="2dp"
+                android:textSize="17sp"
+                android:paddingLeft="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="MUMBAI"
+                custom:typeface="Brandon_med" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

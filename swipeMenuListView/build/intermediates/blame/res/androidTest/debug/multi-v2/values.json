@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\pratikb\\Videos\\uactiv1_5beta\\UActive_v5beta\\swipeMenuListView\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\pratikb\\Videos\\uactiv1_5beta\\UActive_v5beta\\swipeMenuListView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,110,401",
+                        "endLines": "2,9,12",
+                        "endColumns": "54,12,12",
+                        "endOffsets": "105,396,556"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\pratikb\\Videos\\uactiv1_5beta\\UActive_v5beta\\swipeMenuListView\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\pratikb\\Videos\\uactiv1_5beta\\UActive_v5beta\\swipeMenuListView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,110,401",
+                        "endLines": "2,9,12",
+                        "endColumns": "54,12,12",
+                        "endOffsets": "105,396,556"
+                    }
+                }
+            ]
+        }
+    ]
+}

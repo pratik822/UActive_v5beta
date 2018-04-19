@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="application_key">uactiv3bb992c85ea7ca002d54cea437f621c7d</string> &lt;!&ndash;//development key&ndash;&gt;-->
+    <string name="application_key">34be2dfc958039e5bc0aa879d476098c2</string> <!--live key-->
+    <string name="default_server_url">https://apps.applozic.com</string>
+    <string name="default_mqtt_server_url">tcp://apps.applozic.com:1883</string>
+    <string name="default_media_location_folder">UACTIV</string>
+    <string name="take_order_userid">UACTIV</string>
+    <string name="invite_message">Hey, check out UACTIV!</string>
+</resources>

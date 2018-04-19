@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tools"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:collapseIcon="@drawable/ic_backs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_backs" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tb_txt"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="100dp"
+                android:layout_gravity="left"
+                android:text="Filter"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                custom:typeface="Brandon_reg"/>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/tools"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout1"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rrLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDummy"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvPreferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Reset All"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvPreferences"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvSearchRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_toEndOf="@+id/imageView21"
+                android:layout_toRightOf="@+id/imageView21"
+                android:text="Search Radius"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvPreferences"
+                android:layout_alignStart="@+id/tvPreferences"
+                android:layout_below="@+id/tvSearchRadius"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:text="0km"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvSearchRadius"
+                android:layout_alignStart="@+id/tvSearchRadius"
+                android:layout_below="@+id/tvRadius"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/custom_seekbar_line"
+                android:thumb="@drawable/custom_seekbar" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/seekBar1"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/activitylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="15dp"
+                android:visibility="visible">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_toEndOf="@+id/imageView18"
+                    android:layout_toRightOf="@+id/imageView18"
+                    android:gravity="left|center"
+                    android:text="Select activities"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <LinearLayout
+                    android:id="@+id/ln"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_title"
+                    android:layout_alignStart="@+id/tv_title"
+                    android:layout_below="@+id/tv_title"
+                    android:orientation="horizontal">
+
+                    <com.plumillonforge.android.chipview.ChipView
+                        android:id="@+id/chipview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/customTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_title"
+                    android:layout_alignStart="@+id/tv_title"
+                    android:layout_below="@+id/ln"
+                    android:layout_toLeftOf="@+id/imageView16"
+                    android:layout_toStartOf="@+id/imageView16"
+                    android:gravity="left|center"
+                    android:text="Filter your search by one or more prefered activities."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_2"
+                    custom:typeface="Brandon_med" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:src="@drawable/right_gray_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/search_act" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/activitylayout"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/spinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view22"
+                android:layout_marginTop="15dp"
+                android:visibility="visible">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageView20"
+                    android:layout_toLeftOf="@+id/radioGroup"
+                    android:layout_toRightOf="@+id/imageView20"
+                    android:layout_toStartOf="@+id/radioGroup"
+                    android:gravity="left|center"
+                    android:paddingLeft="14dp"
+                    android:paddingStart="14dp"
+                    android:text="Gender"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rv_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="M"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/fe_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="F" />
+
+                    <RadioButton
+                        android:id="@+id/rv_both"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/green"
+                        android:text="Both" />
+
+                </RadioGroup>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_alignStart="@+id/textView1"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="7dp"
+                    android:paddingLeft="14dp"
+                    android:paddingStart="14dp"
+                    android:text="Select gender preferance"
+                    android:textSize="@dimen/text_size_2" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:src="@drawable/search_gender" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/spinnerLayout"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_marginTop="15dp"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/search_fb" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/textView150"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_toEndOf="@+id/imageView22"
+                    android:layout_toRightOf="@+id/imageView22"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:text="Only see profile of people who you have mutual friends with."
+                    android:textSize="@dimen/text_size_1" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView22"
+                    android:buttonTint="@color/green"
+                    android:layout_marginLeft="262dp"
+                    android:layout_marginStart="287dp"
+                    android:layout_toEndOf="@+id/imageView22"
+                    android:layout_toRightOf="@+id/imageView22"
+                    android:text="" />
+
+
+            </RelativeLayout>
+
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSearchRadius"
+                android:layout_toEndOf="@+id/imageView21"
+                android:layout_toRightOf="@+id/imageView21"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:text="Limit Your Search to perticular radius."
+                android:textSize="@dimen/text_size_2" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/seekBar1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/search" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/textView100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/relativeLayout6"
+                android:layout_toEndOf="@+id/imageView21"
+                android:layout_toRightOf="@+id/imageView21"
+                android:gravity="left|center"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:text="Facebook Mutual Friends"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green">
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/tvSave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            android:text="Apply"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffff"
+            custom:typeface="Brandon_med" />
+
+    </RelativeLayout>
+    <include layout="@layout/loder_view"></include>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/roort_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvPersonNames"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_buddyup_details"
+        android:layout_alignLeft="@+id/include_buddyup_details"
+        android:layout_marginBottom="@dimen/margin_extralarge_size"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="hekkid"
+        android:textSize="@dimen/text_size_4"
+        custom:typeface="Brandon_bld"/>
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tobar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/margin_large_size"
+                android:src="@drawable/top_back_arrow" />
+
+            <LinearLayout
+                android:id="@+id/maptoggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/top_location_active"
+                android:orientation="horizontal">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/btn_map"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffff" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/btn_list"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="@dimen/margin_large_size"
+                android:src="@drawable/top_clock_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thumblayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="05dp"
+            android:visibility="gone">
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvLeftThumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvRightThumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="12"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_med" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ratingBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone">
+            <!--    <LinearLayout android:id="@+id/seekbar_placeholder"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>-->
+            <LinearLayout
+                android:id="@+id/layoutExample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.uactiv.widgets.CustomButton
+                    android:id="@+id/btnDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_name_box"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Start Time"
+                    android:textAllCaps="false"
+                    android:textColor="@color/date_color"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <com.uactiv.widgets.CustomButton
+                    android:id="@+id/btnTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile_name_box"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="End Time"
+                    android:textAllCaps="false"
+                    android:textColor="@color/date_color"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33d6c6"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_2">
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/allbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/createpickupbg"
+                android:padding="@dimen/dp_15"
+                android:text="All"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                custom:typeface="Brandon_bld" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollableviewSeeAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fadingEdgeLength="5dp"
+                android:requiresFadingEdge="horizontal"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/datemainlinlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lay_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/scrollableview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sep_color"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_mapview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/maps"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:id="@+id/ly_pickup_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <include
+                        android:id="@+id/mapDetails"
+                        layout="@layout/mapview_inflate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

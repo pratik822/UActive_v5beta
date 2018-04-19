@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/name_gray"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_4"
+        custom:typeface="Brandon_med"/>
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:layout_below="@+id/txt"
+        android:background="@color/sep_color" >
+    </RelativeLayout>
+
+</RelativeLayout>

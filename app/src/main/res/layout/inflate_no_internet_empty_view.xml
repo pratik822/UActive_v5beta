@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/empty_view_no_internet"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/empty_view_height_width"
+            android:layout_height="@dimen/empty_view_height_width"
+            android:layout_gravity="center"
+            android:src="@drawable/no_internet" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:text="@string/empty_view_no_internet_connection"
+            android:textColor="@color/empty_font_color"
+            android:textSize="@dimen/empty_msg_text_size"
+            custom:typeface="Brandon_bld" />
+    </LinearLayout>
+</RelativeLayout>

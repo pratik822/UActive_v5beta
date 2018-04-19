@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerParentLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.uactiv.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/headerTitle"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:typeface="Brandon_bld"
+        />
+
+</LinearLayout>

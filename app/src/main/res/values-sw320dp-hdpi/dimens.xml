@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- text margin size -->
+    <dimen name="text_size_0">8dp</dimen>
+    <dimen name="text_size_1">10dp</dimen>
+    <dimen name="text_size_2">11dp</dimen>
+    <dimen name="text_size_3">14dp</dimen>
+    <dimen name="text_size_4">18dp</dimen>
+    <dimen name="text_size_5">20dp</dimen>
+    <dimen name="text_size_6">22dp</dimen>
+    <dimen name="text_size_7">12dp</dimen>
+    <dimen name="dp_18">14dp</dimen>
+    <!-- padding -->
+    <dimen name="padding_right">14dp</dimen>
+    <dimen name="padding_left">5dp</dimen>
+    <dimen name="padding_buddyupedit_left">50dp</dimen>
+    <dimen name="padding_pickupedit_left">100dp</dimen>
+
+    <!-- margin neg -->
+    <dimen name="neg_margin_left">-5dp</dimen>
+    <dimen name="neg_margin_imageleft">-8dp</dimen>
+
+    <!-- margin -->
+    <dimen name="margin_left">2dp</dimen>
+    <dimen name="margin_left_small">0dp</dimen>
+    <dimen name="margin_right">7dp</dimen>
+    <dimen name="margin_bottom">6dp</dimen>
+    <dimen name="picupproadap">200dp</dimen>
+</resources>

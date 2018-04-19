@@ -1,0 +1,70 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_vertical_margin"
+        custom:typeface="Brandon_med"/>
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/profile_name_box" >
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/green"
+            android:textSize="@dimen/activity_vertical_margin"
+            custom:typeface="Brandon_med"/>
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imgRightArrow"
+            android:layout_toRightOf="@+id/tvTime"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/activity_vertical_margin"
+            custom:typeface="Brandon_med"/>
+
+        <ImageView
+            android:id="@+id/imgRightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_gray_arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_160"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:view_backgroundColor="@color/colorPrimary"
+            app:view_borderColor="@android:color/white"
+            app:view_borderWidth="2dp"
+            app:view_shadowColor="@color/grey"
+            app:view_shadowDx="2dp"
+            app:view_shadowDy="0dp"
+            app:view_shadowRadius="2dp"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/imgProfile"
+            android:background="@color/sep_color" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+         />
+
+
+</RelativeLayout>
+

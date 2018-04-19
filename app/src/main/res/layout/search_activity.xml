@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/search_box"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/relativeLayout3">
+
+        <com.uactiv.widgets.CustomAutoCompleteTextView
+            android:id="@+id/pickUpSearchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="@dimen/dp_12"
+            android:padding="@dimen/dp_10"
+            android:background="@color/transparent"
+            android:hint="Search for an activity to join"
+            android:paddingLeft="@dimen/padding_buddyupedit_left"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:singleLine="true"
+            android:textColor="@color/edit_gray"
+            android:textColorHint="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            custom:typeface="Brandon_med"
+            android:layout_toLeftOf="@+id/imgClear" />
+
+        <ImageView
+            android:id="@+id/imgClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/pickUpSearchs"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/search_close_icon" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sep_color"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/relativeLayout3" />
+</RelativeLayout>

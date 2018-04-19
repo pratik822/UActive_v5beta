@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/sep_color"
+   >
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBarText">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scrimAnimationDuration="1000"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:expandedTitleMarginStart="?actionBarSize"
+                android:fitsSystemWindows="true"
+                >
+
+                <include layout="@layout/main_lay_header" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/buddylist"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@color/sep_color" />-->
+                <com.uactiv.utils.EndlessRecyclerViewNew
+                    android:id="@+id/buddylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sep_color" />
+
+
+                <LinearLayout
+                    android:id="@+id/emptyViewer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/empty_view_pick_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/no_pickup"
+                            android:visibility="visible" />
+
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:text="No result found! Try:"
+                            android:textColor="@color/empty_font_color"
+                            android:textSize="@dimen/empty_msg_text_size"
+                            custom:typeface="Brandon_bld" />
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="1.Searching for another activity"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/empty_font_color"
+                            android:textSize="@dimen/empty_msg_text_size"
+                            custom:typeface="Brandon_bld" />
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="2.Increasing your search radius from Setting"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/empty_font_color"
+                            android:textSize="@dimen/empty_msg_text_size"
+                            custom:typeface="Brandon_bld" />
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:text="3.Create your own Pick Up!"
+                            android:textColor="@color/empty_font_color"
+                            android:textSize="@dimen/empty_msg_text_size"
+                            custom:typeface="Brandon_bld" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/empty_view_buddy_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/no_buddyup"
+                            android:visibility="visible" />
+
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                           android:paddingTop="@dimen/dp_15"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:text="@string/empty_msg_no_buddy_up_list"
+                            android:textColor="@color/empty_font_color"
+                            android:textSize="@dimen/empty_msg_text_size"
+                            custom:typeface="Brandon_bld" />
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:paddingTop="2dp"
+                            android:text="Pull down to refresh"
+                            android:textColor="@color/empty_font_color"
+                            android:textSize="@dimen/empty_msg_text_size"
+                            custom:typeface="Brandon_bld" />
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:paddingTop="6dp"
+                            android:src="@drawable/downarrows"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/empty_view_no_internet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/no_internet"
+                            android:visibility="visible" />
+
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_15"
+                            android:text="@string/empty_view_no_internet_connection"
+                            android:textColor="@color/empty_font_color"
+                            android:textSize="@dimen/empty_msg_text_size"
+                            custom:typeface="Brandon_bld" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <include layout="@layout/loder_view" />
+
+
+    <com.uactiv.widgets.CustomButton
+        android:id="@+id/bottomBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#1CD591"
+        android:text="Create Pick Up"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_5"
+        android:visibility="visible"
+        custom:typeface="Brandon_med" />
+
+
+</RelativeLayout>

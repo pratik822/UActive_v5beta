@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_name_box">
+
+    <RelativeLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:background="@drawable/empty_rect_bg_colorpri"
+        android:padding="8dp">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:text="Uactive"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_vertical_margin"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvCircle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/red_circle"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            custom:typeface="Brandon_med" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/gameLayout"
+        android:layout_alignRight="@+id/gameLayout"
+        android:layout_below="@+id/gameLayout"
+        android:padding="8dp">
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            app:view_borderColor="@android:color/white"
+            app:view_borderWidth="2dp"
+            app:view_shadowColor="@color/grey"
+            app:view_shadowDx="2dp"
+            app:view_shadowDy="0dp"
+            app:view_shadowRadius="2dp" />
+
+        <!--  app:view_borderWidth="1dp"
+            app:view_shadowColor="@color/grey"
+
+            app:view_shadowDx="1dp"
+
+            app:view_shadowDy="0dp"
+
+            app:view_shadowRadius="1dp"-->
+        <ImageView
+            android:id="@+id/imgCount"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/imgProfile"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/imgProfile"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/num_circle"
+            android:visibility="gone" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tv_attending_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgCount"
+            android:layout_alignLeft="@+id/imgCount"
+            android:layout_alignRight="@+id/imgCount"
+            android:layout_alignTop="@+id/imgCount"
+            android:gravity="center"
+            android:text=""
+            android:textSize="11dp"
+            android:visibility="gone"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/countCircle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/red_circle"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/countCircle"
+            android:layout_below="@+id/countCircle"
+            android:text=""
+            android:textSize="11dp"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/countCircle"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/activity_vertical_margin"
+            custom:typeface="Brandon_reg" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_delete" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/selectOrNot"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/transparent_black_dark"
+        android:visibility="gone" />
+</RelativeLayout>

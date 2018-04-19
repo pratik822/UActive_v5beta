@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_name_box"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Share this Pick Up!"
+            android:textColor="@color/share_textcolor"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            custom:typeface="Brandon_med"/>
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/message_icon"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Message"
+            android:textColor="@color/share_textcolor"
+            android:textSize="@dimen/text_size_2"
+            custom:typeface="Brandon_reg"
+            android:layout_below="@+id/textView4" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvWhatsApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/tvMessage"
+            android:drawableTop="@drawable/whats_app"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="WhatsApp"
+            android:textColor="@color/share_textcolor"
+            android:textSize="@dimen/text_size_2"
+            custom:typeface="Brandon_reg"
+            android:layout_below="@+id/textView4" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvMessage"
+            android:layout_alignTop="@+id/tvMessage"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tvMessage"
+            android:drawableTop="@drawable/twitter_icon"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Twitter"
+            android:textColor="@color/share_textcolor"
+            android:textSize="@dimen/text_size_2"
+            custom:typeface="Brandon_reg"/>
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvGooglePlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawableTop="@drawable/google_plus_icon"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Google +"
+            android:textColor="@color/share_textcolor"
+            android:textSize="@dimen/text_size_2"
+            custom:typeface="Brandon_reg"/>
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvGooglePlus"
+            android:layout_alignTop="@+id/tvGooglePlus"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/tvGooglePlus"
+            android:drawableTop="@drawable/facebook_icon"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Facebook"
+            android:textColor="@color/share_textcolor"
+            android:textSize="@dimen/text_size_2"
+            custom:typeface="Brandon_reg"/>
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvGooglePlus"
+            android:layout_alignTop="@+id/tvGooglePlus"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tvGooglePlus"
+            android:drawableTop="@drawable/share_mail_icon"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Mail"
+            android:textColor="@color/share_textcolor"
+            android:textSize="@dimen/text_size_2"
+            custom:typeface="Brandon_reg"/>
+
+        <RelativeLayout
+            android:id="@+id/editUrl_lay"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/tvGooglePlus"
+            android:background="@drawable/link_text_box"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:padding="@dimen/dp_5"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_height="wrap_content">
+
+                <com.uactiv.widgets.CustomEditText
+                    android:id="@+id/editUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="15"
+                    android:gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:text=""
+                    android:editable="false"
+                    android:clickable="false"
+                    android:textColor="@color/share_textcolor"
+                    android:textColorHint="@color/share_textcolor"
+                    android:textSize="@dimen/text_size_2"
+                    custom:typeface="Brandon_reg"
+                    android:layout_alignParentTop="true">
+                </com.uactiv.widgets.CustomEditText>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/btnShareUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editUrl_lay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/url_btn"
+            android:gravity="center"
+            android:text="Copy share URL"
+            android:textAllCaps="false"
+            android:textColor="@color/share_textcolor"
+            android:textSize="@dimen/text_size_3"
+            custom:typeface="Brandon_reg"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editUrl_lay"
+            android:layout_alignLeft="@+id/editUrl_lay"
+            android:layout_alignTop="@+id/editUrl_lay"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/link_icon" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="12dp"
+            android:text="Get 5 friends to create a profile on UACTIV (using your code) and get INR 300 off towards Pick Ups on the app!"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/tvShare"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_alignRight="@+id/tvTwitter"
+            android:layout_alignEnd="@+id/tvTwitter"
+            android:layout_toEndOf="@+id/imageView1"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/tvFacebook"
+            android:layout_alignStart="@+id/tvFacebook" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/txt_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/right_gray_arrow"
+            android:padding="@dimen/dp_10"
+            android:text="Contact us"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_3"
+            app:typeface="Brandon_med" />
+
+        <!--  <com.uactiv.widgets.CustomTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dp_6"
+              android:paddingBottom="@dimen/dp_8"
+              android:text="@string/support_mail_id"
+              app:typeface="Brandon_reg" />-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_2"
+            android:background="@color/border" />
+
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/txt_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/right_gray_arrow"
+            android:padding="@dimen/dp_10"
+            android:text="Terms"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_3"
+            app:typeface="Brandon_med" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_2"
+            android:background="@color/border" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/txt_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/right_gray_arrow"
+            android:padding="@dimen/dp_10"
+            android:text=" Privacy policy"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_3"
+            app:typeface="Brandon_med" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_2"
+            android:background="@color/border" />
+
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/txt_rate_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/right_gray_arrow"
+            android:padding="@dimen/dp_10"
+            android:text="Rate us on the play store"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_3"
+            app:typeface="Brandon_med" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_2"
+            android:background="@color/border" />
+
+
+    </LinearLayout>
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/txtCopyRightYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_16"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text=" Copyright © 2016 Uactive Technology Private Limited"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_1"
+        app:typeface="Brandon_med" />
+</RelativeLayout>
+

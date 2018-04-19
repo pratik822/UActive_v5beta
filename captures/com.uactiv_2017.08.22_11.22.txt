@@ -1,0 +1,197 @@
+TASK com.uactiv id=496
+  ACTIVITY com.uactiv/.activity.MainActivity d8ecf79 pid=25550
+    Local FragmentActivity 2aff89b State:
+      mCreated=truemResumed=true mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    Active Fragments in 2c77fbb:
+      #0: FragmentDrawer{d7e8cd8 #0 id=0x7f1000c4}
+        mFragmentId=#7f1000c4 mContainerId=#7f1000c0 mTag=null
+        mState=5 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+        mAdded=true mRemoving=false mFromLayout=true mInLayout=true
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{2c77fbb in HostCallbacks{4dbf831}}
+        mHost=android.support.v4.app.FragmentActivity$HostCallbacks@4dbf831
+        mView=android.widget.RelativeLayout{e2dcb16 I.E...... ......ID 1080,0-1860,1704 #7f1000c4 app:id/fragment_navigation_drawer}
+        mInnerView=android.widget.RelativeLayout{e2dcb16 I.E...... ......ID 1080,0-1860,1704 #7f1000c4 app:id/fragment_navigation_drawer}
+        Child FragmentManager{6645c97 in FragmentDrawer{d7e8cd8}}:
+          FragmentManager misc state:
+            mHost=android.support.v4.app.FragmentActivity$HostCallbacks@4dbf831
+            mContainer=android.support.v4.app.Fragment$2@bb9e84
+            mParent=FragmentDrawer{d7e8cd8 #0 id=0x7f1000c4}
+            mCurState=5 mStateSaved=false mDestroyed=false
+      #1: Home{846e66d #1 id=0x7f1000c3}
+        mFragmentId=#7f1000c3 mContainerId=#7f1000c3 mTag=null
+        mState=5 mIndex=1 mWho=android:fragment:1 mBackStackNesting=0
+        mAdded=true mRemoving=false mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{2c77fbb in HostCallbacks{4dbf831}}
+        mHost=android.support.v4.app.FragmentActivity$HostCallbacks@4dbf831
+        mContainer=android.widget.FrameLayout{5b382a2 V.E...... ........ 0,135-1080,1704 #7f1000c3 app:id/container_body}
+        mView=android.widget.RelativeLayout{a882b33 V.E...... ........ 0,0-1080,1569}
+        mInnerView=android.widget.RelativeLayout{a882b33 V.E...... ........ 0,0-1080,1569}
+        Child FragmentManager{5961ef0 in Home{846e66d}}:
+          FragmentManager misc state:
+            mHost=android.support.v4.app.FragmentActivity$HostCallbacks@4dbf831
+            mContainer=android.support.v4.app.Fragment$2@bf87c69
+            mParent=Home{846e66d #1 id=0x7f1000c3}
+            mCurState=5 mStateSaved=false mDestroyed=false
+    Added Fragments:
+      #0: FragmentDrawer{d7e8cd8 #0 id=0x7f1000c4}
+      #1: Home{846e66d #1 id=0x7f1000c3}
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@4dbf831
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@4dbf831
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.PhoneWindow$DecorView{eb26ee V.E..... ... 0,0-1080,1920}
+        android.widget.LinearLayout{410478f V.E..... ... 0,0-1080,1776}
+          android.view.ViewStub{8563a1c G.E..... ... 0,0-0,0 #10203ad android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{137625 V.E..... ... 0,72-1080,1776}
+            android.support.v7.widget.FitWindowsLinearLayout{be6c3fa V.E..... ... 0,0-1080,1704 #7f100080 app:id/action_bar_root}
+              android.support.v7.widget.ViewStubCompat{e53cdab G.E..... ... 0,0-0,0 #7f100081 app:id/action_mode_bar_stub}
+              android.support.v7.widget.ContentFrameLayout{f9adc08 V.E..... ... 0,0-1080,1704 #1020002 android:id/content}
+                android.support.v4.widget.DrawerLayout{a2a4fa1 VFE..... ... 0,0-1080,1704 #7f1000c0 app:id/drawer_layout}
+                  android.widget.LinearLayout{fcd25c6 V.E..... ... 0,0-1080,1704}
+                    android.widget.LinearLayout{8ff9987 V.E..... ... 0,0-1080,135 #7f1000c1 app:id/container_toolbar}
+                      android.widget.RelativeLayout{b05b0b4 V.E..... ... 0,0-1080,135 #7f1000c2 app:id/toolbar}
+                        android.widget.LinearLayout{c7b44dd V.E..... ... 0,0-1080,135 #7f1000fb app:id/layoutLeft}
+                          android.support.v7.widget.AppCompatImageButton{f65d852 VFED..C. .S. 0,0-270,135 #7f1000fc app:id/imgDashBoard}
+                          android.widget.RelativeLayout{7b24723 V.E..... ... 270,0-540,135 #7f1003a1 app:id/tab_message}
+                            android.support.v7.widget.AppCompatImageButton{a72420 VFED..C. ... 85,23-185,112 #7f1000fd app:id/imgMessage}
+                            android.support.v7.widget.AppCompatTextView{4ec51d9 G.ED.... ... 0,0-0,0 #7f1003a2 app:id/notification_count}
+                          android.widget.RelativeLayout{65279e V.E..... ... 540,0-810,135 #7f1003a3 app:id/tab_calender}
+                            android.support.v7.widget.AppCompatImageButton{f58327f VFED..C. ... 94,22-175,112 #7f1000fe app:id/imgCalendar}
+                            android.support.v7.widget.AppCompatTextView{52a624c G.ED.... ... 0,0-0,0 #7f1003a4 app:id/schedule_count}
+                          android.support.v7.widget.AppCompatImageButton{fc73295 VFED..C. ... 810,0-1080,135 #7f1000ff app:id/imgMenuIcon}
+                    android.widget.FrameLayout{5b382a2 V.E..... ... 0,135-1080,1704 #7f1000c3 app:id/container_body}
+                      android.widget.RelativeLayout{a882b33 V.E..... ... 0,0-1080,1569}
+                        android.support.design.widget.CoordinatorLayout{d781faa V.E..... ... 0,0-1080,1569}
+                          android.support.design.widget.AppBarLayout{9102421 V.E..... ... 0,0-1080,599}
+                            android.support.design.widget.CollapsingToolbarLayout{d47779b V.ED.... ... 0,0-1080,599 #7f100272 app:id/collapsing_toolbar}
+                              android.widget.FrameLayout{ac15738 V.E..... ... 0,0-1080,599 #7f10026f app:id/headerRoot}
+                                android.widget.RelativeLayout{a356311 V.E..... ... 0,0-1080,599 #7f100094 app:id/homemain}
+                                  android.widget.RelativeLayout{d108c76 V.E..... ... 0,0-1080,569 #7f100096 app:id/headerView}
+                                    android.support.v7.widget.AppCompatImageView{931f89f V.ED.... ... 0,0-1080,346 #7f100097 app:id/header}
+                                    android.widget.LinearLayout{41bf277 V.E..... ... 60,287-1020,419 #7f100098 app:id/btn_main}
+                                      com.uactiv.widgets.CustomButton{2d0aee4 VFED..C. .S. 12,12-480,120 #7f100099 app:id/button1}
+                                      com.uactiv.widgets.CustomButton{7c1f4d VFED..C. ... 480,12-948,120 #7f10009a app:id/button3}
+                                    android.widget.RelativeLayout{8f0fa02 V.E..... ... 75,434-1005,569}
+                                      android.support.v7.widget.AppCompatImageView{a533f13 V.ED.... ... 60,37-120,97 #7f100270 app:id/search_icon}
+                                      android.support.v7.widget.AppCompatImageView{e5bd550 I.ED..C. ... 813,39-870,96 #7f100202 app:id/searchClose}
+                                      com.uactiv.widgets.CustomAutoCompleteTextView{3f86349 VFED..CL F.. 120,7-813,127 #7f10009b app:id/searchs}
+                                    android.support.v7.widget.AppCompatImageView{278b44e V.ED..C. ... 996,24-1056,84 #7f100271 app:id/btn_refresh_location}
+                          android.support.v4.widget.SwipeRefreshLayout{967a046 V.ED.... ... 0,599-1080,2168 #7f100273 app:id/swipe_refresh_layout}
+                            android.support.v4.widget.CircleImageView{6a8b96f G.ED.... ... 480,-120-600,0}
+                            android.widget.RelativeLayout{930f67c V.E..... ... 0,0-1080,1569}
+                              com.uactiv.utils.EndlessRecyclerViewNew{4daeb05 GFED.... ... 0,0-1080,1569 #7f100274 app:id/buddylist}
+                              android.widget.LinearLayout{fafc75a V.E..... ... 0,120-1080,768 #7f100275 app:id/emptyViewer}
+                                android.widget.LinearLayout{6317d8b G.E..... ... 0,0-0,0 #7f100276 app:id/empty_view_pick_up}
+                                  android.support.v7.widget.AppCompatImageView{bd4fe68 V.ED.... ... 0,0-0,0}
+                                  com.uactiv.widgets.CustomTextView{ba43281 V.ED.... ... 0,0-0,0}
+                                android.widget.LinearLayout{d12ff26 V.E..... ... 0,0-1080,648 #7f100277 app:id/empty_view_buddy_up}
+                                  android.support.v7.widget.AppCompatImageView{8386767 V.ED.... ... 337,0-742,377}
+                                  com.uactiv.widgets.CustomTextView{2f9914 V.ED.... ... 0,377-1080,648}
+                                android.widget.LinearLayout{e6075bd G.E..... ... 0,0-0,0 #7f100244 app:id/empty_view_no_internet}
+                                  android.support.v7.widget.AppCompatImageView{1fe7b2 V.ED.... ... 0,0-0,0}
+                                  com.uactiv.widgets.CustomTextView{bda1303 V.ED.... ... 0,0-0,0}
+                        android.widget.FrameLayout{4f73280 V.E..... ... 0,0-1080,1569}
+                          com.felipecsl.gifimageview.library.GifImageView{da3b0b9 G.ED.... ... 390,634-690,934 #7f10025a app:id/gifLoader}
+                        com.uactiv.widgets.CustomButton{6a0ccfe GFED..C. ... 0,0-0,0 #7f100095 app:id/bottomBarText}
+                  android.widget.RelativeLayout{e2dcb16 I.E..... ... 1080,0-1860,1704 #7f1000c4 app:id/fragment_navigation_drawer}
+                    android.widget.RelativeLayout{b60dc5f V.E...C. ... 0,0-780,483 #7f10021b app:id/nav_header_container}
+                      com.alexzh.circleimageview.CircleImageView{bdcf6ac V.ED.... ... 150,1-630,481 #7f1001cf app:id/imgProfile}
+                      android.view.View{5459f75 V.ED.... ... 0,480-780,483 #7f1000cf app:id/view}
+                    android.support.v7.widget.RecyclerView{eb8bb0a VFED.... ... 0,483-780,1704 #7f10021c app:id/drawerList}
+                      android.widget.RelativeLayout{160df7b V.E..... ... 0,0-780,213}
+                        android.widget.RelativeLayout{e78d198 V.E..... ... 0,0-780,213 #7f100111 app:id/lyRelative}
+                          android.support.v7.widget.AppCompatImageView{cddbdf1 V.ED.... ... 45,46-165,166 #7f1001e0 app:id/imgMenu}
+                          android.support.v7.widget.AppCompatTextView{3af7dd6 V.ED.... ... 210,68-342,145 #7f1001e1 app:id/tvTitle}
+                          android.view.View{393f857 V.ED.... ... 0,210-780,213 #7f1000cf app:id/view}
+                      android.widget.RelativeLayout{5f56f44 V.E..... ... 0,213-780,426}
+                        android.widget.RelativeLayout{3ff482d V.E..... ... 0,0-780,213 #7f100111 app:id/lyRelative}
+                          android.support.v7.widget.AppCompatImageView{b7da162 V.ED.... ... 45,46-165,166 #7f1001e0 app:id/imgMenu}
+                          android.support.v7.widget.AppCompatTextView{f75c2f3 V.ED.... ... 210,68-433,145 #7f1001e1 app:id/tvTitle}
+                          android.view.View{17c3bb0 V.ED.... ... 0,210-780,213 #7f1000cf app:id/view}
+                      android.widget.RelativeLayout{6353a29 V.E..... ... 0,426-780,639}
+                        android.widget.RelativeLayout{11871ae V.E..... ... 0,0-780,213 #7f100111 app:id/lyRelative}
+                          android.support.v7.widget.AppCompatImageView{49f9b4f V.ED.... ... 45,46-165,166 #7f1001e0 app:id/imgMenu}
+                          android.support.v7.widget.AppCompatTextView{76162dc V.ED.... ... 210,68-429,145 #7f1001e1 app:id/tvTitle}
+                          android.view.View{2be4fe5 V.ED.... ... 0,210-780,213 #7f1000cf app:id/view}
+                      android.widget.RelativeLayout{77dfaba V.E..... ... 0,639-780,852}
+                        android.widget.RelativeLayout{8e49d6b V.E..... ... 0,0-780,213 #7f100111 app:id/lyRelative}
+                          android.support.v7.widget.AppCompatImageView{d0fd0c8 V.ED.... ... 45,46-165,166 #7f1001e0 app:id/imgMenu}
+                          android.support.v7.widget.AppCompatTextView{4090561 V.ED.... ... 210,68-489,145 #7f1001e1 app:id/tvTitle}
+                          android.view.View{1810886 V.ED.... ... 0,210-780,213 #7f1000cf app:id/view}
+                      android.widget.RelativeLayout{22da547 V.E..... ... 0,852-780,1065}
+                        android.widget.RelativeLayout{1b53174 V.E..... ... 0,0-780,213 #7f100111 app:id/lyRelative}
+                          android.support.v7.widget.AppCompatImageView{2ef969d V.ED.... ... 45,46-165,166 #7f1001e0 app:id/imgMenu}
+                          android.support.v7.widget.AppCompatTextView{a552712 V.ED.... ... 210,68-384,145 #7f1001e1 app:id/tvTitle}
+                          android.view.View{2154ee3 V.ED.... ... 0,210-780,213 #7f1000cf app:id/view}
+                      android.widget.RelativeLayout{7adf0e0 V.E..... ... 0,1065-780,1278}
+                        android.widget.RelativeLayout{1b3ff99 V.E..... ... 0,0-780,213 #7f100111 app:id/lyRelative}
+                          android.support.v7.widget.AppCompatImageView{adaa25e V.ED.... ... 45,46-165,166 #7f1001e0 app:id/imgMenu}
+                          android.support.v7.widget.AppCompatTextView{f43f63f V.ED.... ... 210,68-344,145 #7f1001e1 app:id/tvTitle}
+                          android.view.View{8b13b0c V.ED.... ... 0,210-780,213 #7f1000cf app:id/view}
+                com.github.amlcurran.showcaseview.ShowcaseView{abbfc55 G.E..... ... 0,0-0,0}
+                  android.support.v7.widget.AppCompatButton{7aa866a VFED..C. ... 0,0-0,0 #7f100008 app:id/showcase_button}
+        android.view.View{88bb75b V.ED.... ... 0,1776-1080,1920 #1020030 android:id/navigationBarBackground}
+        android.view.View{bcfbf8 V.ED.... ... 0,0-1080,72 #102002f android:id/statusBarBackground}
+
+  ACTIVITY com.uactiv/.activity.Sign_In 6fa400c pid=25550
+    Local FragmentActivity 5a70936 State:
+      mCreated=truemResumed=false mStopped=true mReallyStopped=true
+      mLoadersStarted=true
+    FragmentManager misc state:
+      mHost=android.support.v4.app.FragmentActivity$HostCallbacks@f0d08d1
+      mContainer=android.support.v4.app.FragmentActivity$HostCallbacks@f0d08d1
+      mCurState=2 mStateSaved=true mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.PhoneWindow$DecorView{3e29f36 I.E..... ... 0,0-1080,1920}
+        android.widget.LinearLayout{dc46e37 V.E..... ... 0,0-1080,1776}
+          android.view.ViewStub{bc1dfa4 G.E..... ... 0,0-0,0 #10203ad android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{88610d V.E..... ... 0,72-1080,1776}
+            android.support.v7.widget.FitWindowsLinearLayout{4b178c2 V.E..... ... 0,0-1080,1704 #7f100080 app:id/action_bar_root}
+              android.support.v7.widget.ViewStubCompat{a67b6d3 G.E..... ... 0,0-0,0 #7f100081 app:id/action_mode_bar_stub}
+              android.support.v7.widget.ContentFrameLayout{20f5210 V.E..... ... 0,0-1080,1704 #1020002 android:id/content}
+                android.widget.RelativeLayout{3e70109 V.E..... ... 0,0-1080,1704 #7f10025b app:id/myroot}
+                  android.support.v7.widget.AppCompatImageView{1a25f0e V.ED.... ... 135,105-915,330 #7f1000bb app:id/imageView7}
+                  com.uactiv.widgets.CustomTextView{deced2f V.ED.... ... 294,342-785,407 #7f1000bc app:id/textView5}
+                  android.widget.ViewFlipper{f7f7f3c V.E..... ... 135,437-1080,1462 #7f10025c app:id/flipper}
+                    android.widget.LinearLayout{675a4c5 G.E..... ... 54,105-762,884 #7f10025d app:id/login_layout}
+                      com.uactiv.widgets.CustomEditText{da95e1a VFED..CL ... 0,0-708,120 #7f10025e app:id/signin_email_ed}
+                      com.uactiv.widgets.CustomEditText{de52d4b VFED..CL ... 0,120-708,240 #7f10025f app:id/signin_pwd_ed}
+                      com.uactiv.widgets.CustomTextView{1635328 V.ED..C. ... 190,240-518,356 #7f10020f app:id/forgotbtn}
+                      com.uactiv.widgets.CustomButton{390c841 VFED..C. ... 0,356-708,461 #7f100260 app:id/signin_btn}
+                      com.uactiv.widgets.CustomButton{4ef41e6 VFED..C. ... 0,491-708,596 #7f100261 app:id/fbbtn}
+                      android.widget.LinearLayout{dd75327 V.E..... ... 6,608-702,705 #7f100262 app:id/ortvlinlay}
+                        android.view.View{72e79d4 V.ED.... ... 0,47-240,50}
+                        com.uactiv.widgets.CustomTextView{5e0a77d V.ED.... ... 300,0-366,97 #7f100263 app:id/ortxt}
+                        android.view.View{b5d9672 V.ED.... ... 426,47-696,50}
+                      android.widget.LinearLayout{8dbfac3 V.E..... ... 0,714-679,779}
+                        com.uactiv.widgets.CustomTextView{1e35f40 V.ED.... ... 0,0-490,65}
+                        com.uactiv.widgets.CustomTextView{553e79 V.ED..C. ... 490,0-679,65 #7f100264 app:id/signup}
+                    android.widget.LinearLayout{7eaa7be G.E..... ... 0,0-0,0 #7f100265 app:id/forgot_pwlayout}
+                      com.uactiv.widgets.CustomTextView{8f9801f V.ED.... ... 0,0-0,0}
+                      com.uactiv.widgets.CustomTextView{e3f2f6c V.ED.... ... 0,0-0,0}
+                      com.uactiv.widgets.CustomEditText{ae24935 VFED..CL ... 0,0-0,0 #7f1000be app:id/forgot_email_ed}
+                      com.uactiv.widgets.CustomButton{8a581ca VFED..C. ... 0,0-0,0 #7f100090 app:id/submit_area}
+                    android.widget.LinearLayout{83fff3b V.E..... ... 54,0-762,1025}
+                      com.uactiv.widgets.CustomEditText{5a5d658 VFED..CL F.. 0,0-708,120 #7f100266 app:id/fname}
+                      com.uactiv.widgets.CustomEditText{efb43b1 VFED..CL ... 0,120-708,240 #7f100267 app:id/lname}
+                      com.uactiv.widgets.CustomEditText{b81f096 VFED..CL ... 0,240-708,360 #7f100268 app:id/signin_email_edone}
+                      com.uactiv.widgets.CustomEditText{7a55417 VFED..CL ... 0,360-708,480 #7f100269 app:id/signin_pwd_edone}
+                      com.uactiv.widgets.CustomButton{1ce0004 VFED..C. ... 0,522-708,627 #7f10026a app:id/signupone}
+                      com.uactiv.widgets.CustomButton{fcf69ed VFED..C. ... 0,669-708,774 #7f10026b app:id/fbbtnone}
+                      com.uactiv.widgets.CustomTextView{7e48022 V.ED..C. ... 161,810-546,883 #7f10026c app:id/txt_gestlogin}
+                      com.uactiv.widgets.CustomTextView{7a11ab3 V.ED.... ... 0,913-708,969}
+                      android.widget.LinearLayout{f2d1870 V.E..... ... 0,969-708,1025}
+                        com.uactiv.widgets.CustomTextView{a45b7e9 V.ED..C. ... 47,0-375,56 #7f10026d app:id/txt_turms}
+                        com.uactiv.widgets.CustomTextView{4ee7c6e V.ED.... ... 375,0-438,56}
+                        com.uactiv.widgets.CustomTextView{e88af0f V.ED..C. ... 438,0-660,56 #7f100218 app:id/txt_policy}
+                  android.support.v7.widget.AppCompatImageView{a234b9c V.ED.... ... 0,1462-1080,1704 #7f10026e app:id/imageView8}
+                  android.widget.FrameLayout{8b8e9a5 V.E..... ... 0,0-1080,1704}
+                    com.felipecsl.gifimageview.library.GifImageView{889f17a G.ED.... ... 0,0-0,0 #7f10025a app:id/gifLoader}
+        android.view.View{8ab2d2b V.ED.... ... 0,1776-1080,1920 #1020030 android:id/navigationBarBackground}
+        android.view.View{2e78588 V.ED.... ... 0,0-1080,72 #102002f android:id/statusBarBackground}

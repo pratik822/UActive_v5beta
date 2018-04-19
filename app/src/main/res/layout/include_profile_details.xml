@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_name_box"
+        android:padding="@dimen/margin_medium_size" >
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvBuddyDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/include_top_size"
+            android:autoLink="web"
+            android:textColorLink="@color/holo_blue"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_3"
+            custom:typeface="Brandon_med"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+
+            android:layout_below="@+id/tvBuddyDetails"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvSquash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/include_top_size"
+                        android:layout_marginTop="@dimen/margin_medium_size"
+                        android:background="@drawable/profile_blue_box"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/margin_medium_size"
+                        android:paddingRight="@dimen/margin_extralarge_size"
+                        android:textColor="@color/white"
+                        custom:typeface="Brandon_bld"/>
+
+                    <ImageView
+                        android:id="@+id/img_threestar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvSquash"
+                        android:layout_alignTop="@+id/tvSquash"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvSquash"
+                        />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvParkour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/include_top_size"
+
+                        android:layout_marginLeft="@dimen/margin_medium_size"
+                        android:layout_marginTop="@dimen/margin_medium_size"
+                        android:layout_toRightOf="@+id/img_threestar"
+                        android:background="@drawable/profile_blue_box"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/margin_small_size"
+                        android:paddingRight="@dimen/margin_extralarge_size"
+
+                        android:textColor="@color/white"
+                        custom:typeface="Brandon_bld"/>
+
+                    <ImageView
+                        android:id="@+id/img_onestar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvParkour"
+                        android:layout_alignTop="@+id/tvParkour"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvParkour"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvYoga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/include_top_size"
+
+
+                        android:layout_marginTop="@dimen/margin_medium_size"
+
+                        android:background="@drawable/profile_blue_box"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:paddingLeft="@dimen/margin_medium_size"
+                        android:paddingRight="@dimen/margin_extralarge_size"
+
+
+                        android:textColor="@color/white"
+                        custom:typeface="Brandon_bld"/>
+
+                    <ImageView
+                        android:id="@+id/img_twostar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvYoga"
+                        android:layout_alignTop="@+id/tvYoga"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvYoga"
+                        />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvRockClimbing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/include_top_size"
+
+                        android:layout_marginLeft="@dimen/margin_medium_size"
+                        android:layout_marginTop="@dimen/margin_medium_size"
+                        android:layout_toRightOf="@+id/img_twostar"
+                        android:background="@drawable/profile_blue_box"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/margin_small_size"
+                        android:paddingRight="@dimen/margin_extralarge_size"
+
+                        android:textColor="@color/white"
+                        custom:typeface="Brandon_bld"/>
+
+                    <ImageView
+                        android:id="@+id/img_rockstar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvRockClimbing"
+                        android:layout_alignTop="@+id/tvRockClimbing"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvRockClimbing"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

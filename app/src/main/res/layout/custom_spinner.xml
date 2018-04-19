@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Large Text"
+        android:textSize="@dimen/text_size_4"
+        custom:typeface="Brandon_med"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvSpinner"
+        android:background="@color/sep_color" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.uactiv.widgets.CustomButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createpickupbtn"
+       android:layout_marginTop="@dimen/abc_action_bar_icon_vertical_padding_material"
+
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        custom:typeface="Brandon_med"
+        android:background="@color/buddyup_bg"/>
+    </RelativeLayout>

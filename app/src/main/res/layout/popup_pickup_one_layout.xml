@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/leftrightpadding"
+    android:paddingRight="@dimen/leftrightpadding">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@color/white"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <com.uactiv.activity.RoundRectCornerImageView
+                android:id="@+id/iv_image"
+                android:layout_width="300dp"
+                android:layout_height="@dimen/heightone"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/user"
+                android:layout_weight="0.9"></com.uactiv.activity.RoundRectCornerImageView>
+
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="sample text lorum sample text lorum sample text lorum sample text lorum sample text lorum lorum."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#3a445e"
+                android:textSize="16sp"
+                custom:typeface="Brandon_reg" />
+
+
+            <com.uactiv.widgets.CustomButton
+                android:id="@+id/btn_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_shapepopuppickup"
+                android:text="Know more"
+                android:textAllCaps="false"
+                android:textColor="#4DBA89"
+                android:textSize="18dp"
+                custom:typeface="Brandon_bld" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/btn_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:src="@drawable/crosses"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

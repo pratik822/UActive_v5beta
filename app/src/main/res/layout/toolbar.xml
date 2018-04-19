@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <LinearLayout
+        android:id="@+id/layoutLeft"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true">
+
+
+
+
+        <ImageButton
+            android:id="@+id/imgDashBoard"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/buttonpressed_dashboard"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+
+        <!-- <ImageButton
+             android:id="@+id/imgMessage"
+             android:layout_width="0dp"
+             android:visibility="gone"
+             android:layout_height="fill_parent"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="1"
+             android:src="@drawable/buttonpressed_message"
+             android:background="@null"/>-->
+        <RelativeLayout
+            android:id="@+id/tab_calender"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|fill_horizontal"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/imgCalendar"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:contentDescription="sdfsdf"
+                android:background="@drawable/social_feed_normal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+            <!--  <ImageButton
+                  android:id="@+id/imgCalendar"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/buttonpressed_calendar"
+                  android:background="@null"
+                  android:layout_centerVertical="true"
+                  android:layout_centerHorizontal="true" />-->
+            <TextView
+                android:id="@+id/schedule_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="-10dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/round_rect_green"
+                android:paddingLeft="@dimen/dp_3"
+                android:paddingRight="@dimen/dp_3"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgCalendar"
+                android:layout_toEndOf="@+id/imgCalendar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/tab_message"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|fill_horizontal"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/imgMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="sdfsdf"
+                android:src="@drawable/buttonpressed_message"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/notification_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_marginLeft="-10dp"
+                android:background="@drawable/round_rect_green"
+                android:layout_marginTop="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_3"
+                android:paddingRight="@dimen/dp_3"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgMessage"
+                android:layout_toEndOf="@+id/imgMessage" />
+        </RelativeLayout>
+
+
+
+
+        <!--
+                <ImageButton
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/buttonpressed_calendar"
+                    android:background="@null"/>-->
+
+        <ImageButton
+            android:id="@+id/imgMenuIcon"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/bottom_menu_icon"
+            android:background="@drawable/buttonpressed_btn1"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

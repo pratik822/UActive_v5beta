@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_small_size"
+            android:background="@drawable/profile_blue_box"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            custom:typeface="Brandon_med"/>
+
+        <ImageView
+            android:id="@+id/imag_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/tvactivity"
+            android:layout_alignTop="@+id/tvactivity"
+            android:layout_marginLeft="@dimen/img_margin_neg"
+            android:layout_toRightOf="@+id/tvactivity"
+            />
+    </RelativeLayout>
+</LinearLayout>

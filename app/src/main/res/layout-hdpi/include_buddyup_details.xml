@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_name_box"
+        android:padding="@dimen/margin_medium_size">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvBuddyDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:autoLink="web"
+            android:textColorLink="@color/holo_blue"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/text_size_3"
+            custom:typeface="Brandon_med" />
+
+
+        <RelativeLayout
+            android:id="@+id/layone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/tvBuddyDetails">
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvSquash"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/include_top_size"
+                android:layout_marginTop="@dimen/margin_medium_size"
+                android:background="@drawable/profile_blue_box"
+                android:gravity="center"
+                android:text="football"
+                android:paddingLeft="@dimen/margin_medium_size"
+                android:paddingRight="@dimen/margin_extralarge_size"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_16"
+                custom:typeface="Brandon_bld" />
+
+            <ImageView
+                android:id="@+id/rate_img_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvSquash"
+                android:layout_alignTop="@+id/tvSquash"
+                android:layout_marginLeft="@dimen/img_margin_neg"
+                android:layout_toRightOf="@+id/tvSquash" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvParkour"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/include_top_size"
+                android:layout_marginLeft="@dimen/margin_medium_size"
+                android:text="football"
+                android:layout_marginTop="@dimen/margin_medium_size"
+                android:layout_toRightOf="@+id/rate_img_one"
+
+                android:background="@drawable/profile_blue_box"
+                android:gravity="center"
+                android:textSize="@dimen/dp_16"
+                android:paddingLeft="@dimen/margin_medium_size"
+                android:paddingRight="@dimen/margin_extralarge_size"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_bld" />
+
+            <ImageView
+                android:id="@+id/rate_img_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvParkour"
+                android:layout_alignTop="@+id/tvParkour"
+                android:layout_marginLeft="@dimen/img_margin_neg"
+                android:layout_toRightOf="@+id/tvParkour" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvYoga"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/include_top_size"
+                android:background="@drawable/profile_blue_box"
+                android:layout_marginTop="@dimen/margin_medium_size"
+                android:gravity="center"
+                android:text="football"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/dp_16"
+                android:layout_toRightOf="@+id/rate_img_two"
+                android:paddingLeft="@dimen/margin_medium_size"
+                android:paddingRight="@dimen/margin_extralarge_size"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_bld" />
+
+            <ImageView
+                android:id="@+id/rate_img_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvYoga"
+                android:layout_alignTop="@+id/tvYoga"
+                android:layout_marginLeft="@dimen/img_margin_neg"
+                android:layout_toRightOf="@+id/tvYoga" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/laytwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_below="@+id/layone">
+
+
+
+
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvRockClimbing"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/include_top_size"
+                android:background="@drawable/profile_blue_box"
+                android:gravity="center"
+                android:text="football"
+                android:paddingLeft="@dimen/margin_medium_size"
+                android:paddingRight="@dimen/margin_extralarge_size"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_16"
+                android:layout_marginTop="@dimen/margin_medium_size"
+                custom:typeface="Brandon_bld" />
+
+            <ImageView
+                android:id="@+id/rate_img_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvRockClimbing"
+                android:layout_alignTop="@+id/tvRockClimbing"
+                android:layout_marginLeft="@dimen/img_margin_neg"
+
+                android:layout_toRightOf="@+id/tvRockClimbing" />
+
+
+
+
+
+        </RelativeLayout>
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvFacebookSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laytwo"
+            android:layout_marginBottom="@dimen/margin_extralarge_size"
+            android:text="Mutual Friends "
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            android:textSize="20dp"
+            custom:typeface="Brandon_med"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mutual_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/tvFacebookSize"
+            android:layout_marginRight="10dp"
+             />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

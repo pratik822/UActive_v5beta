@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/topImage"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_5"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/colorPrimary">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Review the Pick Up!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            custom:typeface="Brandon_med" />
+
+        <ImageView
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_clear_white_24dp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_5"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_below="@+id/topImage"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topImage"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_below="@+id/topImage"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rrLayout"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.uactiv.views.CircularImageViews
+                    android:id="@+id/profileImage"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    app:view_backgroundColor="@color/black_trans80"
+                    android:src="@drawable/ic_profile"
+                    app:view_borderWidth="1dp"
+                    app:view_shadowColor="@color/grey"
+                    app:view_shadowDx="1dp"
+                    app:view_shadowDy="0dp"
+                    app:view_shadowRadius="1dp"
+
+                    />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvBuddyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignBottom="@+id/profileImage"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_name_box"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_name_left_right"
+                    android:paddingRight="@dimen/padding_name_left_right"
+                    android:text="Hi"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_6"
+                    custom:typeface="Brandon_med" />
+            </RelativeLayout>
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_activityname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_15"
+                android:padding="@dimen/dp_10"
+                android:text="Ciricket : sun 5 Aug @5.00 Pm"
+                android:textColor="@color/name_gray"
+                android:textSize="@dimen/text_size_5"
+                custom:typeface="Brandon_med" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                style="@style/CustomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:numStars="5"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:stepSize="1" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_note"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/padding_name_left_right"
+                android:visibility="gone"
+                android:paddingRight="@dimen/padding_name_left_right"
+                android:text="Note:Your rating will be anonymously averaged"
+                android:textColor="@color/name_gray"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_note_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_2"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:text="@string/buddyupnote_one"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_2"
+                custom:typeface="Brandon_med" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:padding="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/grey"
+                android:layout_height="0.2dp"></View>
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_leavecomments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:paddingLeft="@dimen/padding_name_left_right"
+                android:paddingRight="@dimen/padding_name_left_right"
+                android:text="Leave us a comment"
+                android:textColor="@color/name_gray"
+                android:textSize="@dimen/text_size_5"
+                custom:typeface="Brandon_reg" />
+            <View
+                android:layout_width="fill_parent"
+                android:padding="@dimen/dp_2"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/grey"
+                android:layout_height="0.2dp"></View>
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_note_two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:padding="@dimen/dp_5"
+                android:paddingLeft="@dimen/padding_name_left_right"
+                android:paddingRight="@dimen/padding_name_left_right"
+                android:text="@string/pickupnote_two"
+                android:textColor="@color/name_gray"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_reg" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.uactiv.widgets.CustomButton
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/review_submit"
+                    android:text="Submit"
+                    android:padding="@dimen/dp_5"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_5"
+                    custom:typeface="Brandon_bld" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

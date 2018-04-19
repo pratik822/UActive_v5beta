@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#57657f</color>
+    <color name="colorPrimaryDark">#57657f</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="light_grey">#798499</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="border">#B7B7B7</color>
+    <color name="inside">#F2F2F2</color>
+    <color name="grey">#6A6A6A</color>
+    <color name="alerts_bg">#F0F0F0</color>
+    <color name="sep_color">#EEEEEE</color>
+    <color name="sep_color_trans">#80e1e3e7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray_bg">#E6E6E6</color>
+    <color name="buddyup_bg">#1CD591</color>
+    <color name="buddyup_bg_light">#49DDA7</color>
+    <color name="edit_gray">#8791a2</color>
+    <color name="search_box_bg">#F6F6F6</color>
+    <color name="green">#4eba89</color>
+    <color name="pendingcolor">#f7991e</color>
+    <color name="expirecolor">#9a70b0</color>
+    <color name="red">#f17172</color>
+    <color name="top_bar">#57657f</color>
+    <color name="fbcolor">#69A4F5</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_gray">#F28791a2</color>
+    <color name="transparent_black">#D937445e</color>
+
+    <color name="name_gray">#37445e</color>
+    <color name="layout_top">#c6c6c6</color>
+    <color name="date_color">#33d6c6</color>
+    <color name="edit_msg_color">#56647f</color>
+    <color name="share_textcolor">#38455e</color>
+    <color name="light_gray">#E3E3E3</color>
+    <color name="dark_gray">#39445e</color>
+    <color name="black_trans80">#14000000</color>
+    <color name="primary_500">#3F51B5</color>
+
+    <!--My colors-->
+    <color name="pink_100">#e91e63</color>
+
+    <color name="empty_font_color">#928c8c</color>
+
+    <color name="transparent_white_dark">#5fff</color>
+    <color name="transparent_black_dark">#5000</color>
+    <color name="badge_orange">#F89A1C</color>
+    <color name="badge_txt_color">#7A8FB5</color>
+
+</resources>

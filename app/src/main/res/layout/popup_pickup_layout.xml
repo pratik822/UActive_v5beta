@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/leftrightpadding"
+    android:paddingRight="@dimen/leftrightpadding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="470dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/popup_shape"
+            android:padding="5dp">
+
+            <com.uactiv.activity.RoundRectCornerImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/picks"
+
+                ></com.uactiv.activity.RoundRectCornerImageView>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:layout_below="@+id/iv_image"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+                    />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin"
+                        android:drawableLeft="@drawable/ic_calenders"
+                        android:drawablePadding="6dp"
+                        android:gravity="left|center"
+                        android:text="Saturday,September 09,2017"
+                        android:textColor="#3a445e"
+                        android:textSize="16sp"
+                        custom:typeface="Brandon_med" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin"
+                        android:drawableLeft="@drawable/ic_clocks"
+                        android:drawablePadding="6dp"
+                        android:gravity="left|center"
+                        android:text="12:00PM-01:00PM"
+                        android:textColor="#3a445e"
+                        android:textSize="16sp"
+                        custom:typeface="Brandon_med" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tv_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin"
+                        android:drawableLeft="@drawable/ic_activitys"
+                        android:drawablePadding="6dp"
+                        android:gravity="left|center"
+                        android:text="BasketBall"
+                        android:textColor="#3a445e"
+                        android:textSize="16sp"
+                        custom:typeface="Brandon_med" />
+
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin"
+                        android:layout_marginTop="@dimen/margin"
+                        android:gravity="left"
+                        android:text="sample text lorum sample text lorum sample text lorum sample text lorum sample text lorum lorum."
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3a445e"
+                        android:textSize="16sp"
+                        custom:typeface="Brandon_reg" />
+
+
+                </LinearLayout>
+
+                <com.uactiv.widgets.CustomButton
+                    android:id="@+id/btn_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_shapepopuppickup"
+                    android:text="Join Now"
+                    android:textAllCaps="false"
+                    android:textColor="#4eba89"
+                    android:textSize="18dp"
+                    custom:typeface="Brandon_med" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/crosses"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_hostname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout2"
+                android:layout_alignEnd="@+id/iv_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/iv_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/marginone"
+                android:alpha="10"
+                android:paddingBottom="@dimen/marginone"
+                android:shadowColor="#000"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="20"
+                android:text="UACTIV"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_med"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_propic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:src="@drawable/bill" />
+
+    </RelativeLayout>
+</RelativeLayout>

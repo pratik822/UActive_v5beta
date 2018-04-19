@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="horizontal"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/bars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_marginBottom="@dimen/margin_medium_size"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@drawable/round_rect_gray"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_small_size"
+        android:singleLine="true"
+        android:text="User Rating "
+        android:padding="@dimen/dp_4"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        custom:typeface="Brandon_med"
+        android:drawableRight="@drawable/distance_bluestar"
+        android:drawablePadding="2dp"/>
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvEarly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:padding="@dimen/dp_5"
+        android:singleLine="true"
+
+        android:textColor="@android:color/white"
+        custom:typeface="Brandon_med"
+        android:layout_toRightOf="@+id/tvRating"/>
+
+    <ImageView
+        android:id="@+id/imgDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvEarly"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:src="@drawable/map_pin_icon" />
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvDistace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/map_pin_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_below_small"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/imgDistance"
+        android:singleLine="true"
+        android:gravity="center|left"
+
+        android:drawablePadding="@dimen/dp_2"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:text="+ 45 kms"
+        android:textColor="@android:color/white"
+        custom:typeface="Brandon_med"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_small_size"
+        android:src="@drawable/certified" />
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:textAllCaps="true"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignRight="@+id/imageView4"
+        android:background="@drawable/round_rect_pink"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="&apos;HERCULES&apos;"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_0"
+        custom:typeface="Brandon_bld"/>
+
+</RelativeLayout>

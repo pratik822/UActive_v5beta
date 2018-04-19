@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/profile_name_box"
+    android:paddingBottom="2dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="2dp">
+
+    <RelativeLayout
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_neg_extralarge"
+        android:layout_marginRight="4dp"
+        android:layout_toRightOf="@+id/imageProfile"
+        android:background="#FDFDFD">
+        <ImageView
+            android:id="@+id/imageTypes"
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/imageType"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            />
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageType"
+            android:layout_alignLeft="@+id/imageType"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/imageType"
+            android:layout_alignStart="@+id/imageType"
+            android:background="@drawable/round_rect_pink"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/abc_button_padding_horizontal_material"
+            android:visibility="visible"
+            custom:typeface="Brandon_med"
+            tools:text="Rooockrr" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageTypes"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEarlyDistancelinlay"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toEndOf="@+id/imageProfile"
+                android:layout_toRightOf="@+id/imageProfile"
+                android:orientation="horizontal">
+
+                <!-- <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/gridview_skilllist"
+                 android:numColumns="2"
+                 android:gravity="center"
+                 android:columnWidth="25dp"
+                 android:scrollbars="none"
+                 android:focusableInTouchMode="false"
+                 android:stretchMode="columnWidth"
+                 android:layout_width="fill_parent"
+                 android:layout_height="200dp" >
+
+             </GridView>-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvSquash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="13dp"
+                        android:singleLine="true"
+                        android:text="fdffddfdfdf "
+                        android:textColor="#41B3D9"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imag_act_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvSquash"
+                        android:layout_alignTop="@+id/tvSquash"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvSquash" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvParkour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/margin_small_size"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="13dp"
+                        android:singleLine="true"
+                        android:textColor="#30c3e9"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imag_act_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvParkour"
+                        android:layout_alignTop="@+id/tvParkour"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvParkour" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvYoga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="13dp"
+                        android:singleLine="true"
+                        android:text="erererrereer"
+                        android:textColor="#30c3e9"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imag_act_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvYoga"
+                        android:layout_alignTop="@+id/tvYoga"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvYoga" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvactivtyfour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/margin_small_size"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_left"
+                        android:paddingRight="13dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#30c3e9"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imag_act_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvactivtyfour"
+                        android:layout_alignTop="@+id/tvactivtyfour"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_toRightOf="@+id/tvactivtyfour" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.uactiv.activity.MyImageview
+        android:id="@+id/imageProfile"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_centerVertical="true"
+        android:background="#FDFDFD"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/profiless" />
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bgImage"
+        android:layout_alignTop="@+id/bgImage"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+        android:paddingRight="@dimen/abc_button_padding_horizontal_material"
+        android:singleLine="true"
+        android:text="Roshan Kumar ku"
+        android:textColor="@color/name_gray"
+        android:textSize="20sp"
+        custom:typeface="Brandon_med" />
+
+    <LinearLayout
+        android:id="@+id/tvEarlyDistancelinlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/imageProfile"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvEarlyDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_toEndOf="@+id/imageProfile"
+            android:layout_toRightOf="@+id/imageProfile"
+            android:layout_weight="1.1"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="sffsffsf"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            custom:typeface="Brandon_reg" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvAwayDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgLocation"
+            android:layout_toLeftOf="@+id/imgPeople"
+            android:layout_toRightOf="@+id/imgLocation"
+            android:layout_weight="1.7"
+            android:drawableLeft="@drawable/location_pin_icon"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="0 km"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            custom:typeface="Brandon_reg" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/temp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageType"
+        android:layout_alignRight="@+id/imageProfile"
+        android:layout_marginBottom="-15dp"
+        android:layout_marginRight="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+        android:src="@drawable/batchicon_g"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/challenge_badge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageProfile"
+        android:layout_alignLeft="@+id/imageProfile"
+        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+        android:layout_marginRight="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+        android:src="@drawable/batchicon_g"
+        android:visibility="gone" />
+
+</RelativeLayout>

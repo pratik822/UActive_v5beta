@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.uactiv.activity.Image_Detail_activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/saprator"
+            android:layout_below="@+id/pager"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical">
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pager"
+                android:text="Lorem Ipsum hasecimen book"
+                android:textColor="#4B576D"
+                custom:typeface="Brandon_reg" />
+
+        </ScrollView>
+
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/saprator"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_above="@+id/relativeLayout5"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="#808080" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tv_like_count"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ilike" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/iv_like"
+                android:layout_toRightOf="@+id/iv_like"
+                android:gravity="center|center_vertical"
+                android:text="10k"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                custom:typeface="Brandon_med" />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_like"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="81dp"
+                android:layout_marginRight="81dp"
+                android:layout_weight="2.8"
+                android:src="@drawable/white_share" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

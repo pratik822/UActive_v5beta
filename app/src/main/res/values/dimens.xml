@@ -1,0 +1,132 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+    <dimen name="margin_neg_normal">-20dp</dimen>
+    <dimen name="margin_neg_extralarge">-350dp</dimen>
+    <dimen name="margin_neg_extralarge1">-30dp</dimen>
+    <dimen name="margin_neg_medium">-10dp</dimen>
+    <dimen name="img_margin_neg">-15dp</dimen>
+    <dimen name="d_img_margin_neg">-20dp</dimen>
+    <dimen name="option_topmargin">-6dp</dimen>
+    <dimen name="padding_buddyupedit_left">80dp</dimen>
+    <dimen name="picuppro">115dip</dimen>
+    <dimen name="picupproadap">145dp</dimen>
+
+    <dimen name="launch_margin">12dp</dimen>
+    <dimen name="uactive_btn_height">40dp</dimen>
+    <dimen name="signup_padding">15dp</dimen>
+    <dimen name="signup_padding_top">19dp</dimen>
+    <dimen name="signup_padding_left">30dp</dimen>
+    <dimen name="margin_btm">60dp</dimen>
+
+    <!-- Custom dimen-->
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_27">27dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_54">54dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_40">25dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_43">43dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_58">58dp</dimen>
+    <dimen name="dp_62">62dp</dimen>
+    <dimen name="dp_33">33dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_300">300dp</dimen>
+    <dimen name="dp_400">400dp</dimen>
+    <dimen name="dp_450">450dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_49">49dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_176">176dp</dimen>
+
+    <dimen name="dp_1_5">1.5dp</dimen>
+
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_85">85dp</dimen>
+    <dimen name="dp_115">115dp</dimen>
+    <dimen name="dp_9">9dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_220">220dp</dimen>
+    <dimen name="dp_250">250dp</dimen>
+    <dimen name="dp_320dp">320dp</dimen>
+
+    <dimen name="sp_12">12sp</dimen>
+
+    <dimen name="loader_height">100dp</dimen>
+    <dimen name="loader_width">100dp</dimen>
+    <dimen name="dashboard_header_width">200dp</dimen>
+    <dimen name="normal_list_padding_bottom">36dp</dimen>
+    <dimen name="dp_21">21dp</dimen>
+    <dimen name="empty_msg_text_size">16sp</dimen>
+    <dimen name="empty_view_height_width">120dp</dimen>
+    <item name="playservicesresolutionrequest" type="integer">9000</item>
+
+
+    <!--   login screens-->
+    <dimen name="edt_padding">6dp</dimen>
+    <dimen name="edt_saprate_padding">6dp</dimen>
+    <dimen name="edt_drawable_padding">8dp</dimen>
+
+    <!-- buttons-->
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">250dp</dimen>
+
+    <!-- font_sizes-->
+    <dimen name="extra_small_size">12sp</dimen>
+    <dimen name="small_size">14sp</dimen>
+    <dimen name="medium_size">16sp</dimen>
+    <dimen name="medium_normal_size">18sp</dimen>
+    <dimen name="medium_largesize">24sp</dimen>
+
+    <!-- font xlarge-->
+    <!-- font_sizes-->
+    <dimen name="xextra_small_size">16sp</dimen>
+    <dimen name="xsmall_size">19sp</dimen>
+    <dimen name="xmedium_size">23sp</dimen>
+    <dimen name="xmedium_largesize">28sp</dimen>
+    <dimen name="btn_widthlarge">280dp</dimen>
+
+
+    <dimen name="img_height">80dp</dimen>
+    <dimen name="img_width">240dp</dimen>
+
+    <dimen name="img_padding_topone">12dp</dimen>
+    <dimen name="img_padding_top">12dp</dimen>
+    <dimen name="img_padding_bottom">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">220dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

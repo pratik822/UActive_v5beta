@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mainLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:gravity="left|center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvBuddyups"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_4"
+                    custom:typeface="Brandon_med"/>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvPickups"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_4"
+                    custom:typeface="Brandon_med"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+                        android:src="@drawable/batchicon_a"/>
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageType"
+                        android:layout_alignLeft="@+id/imageType"
+                        android:layout_alignRight="@+id/imageType"
+                        android:background="@drawable/round_rect_pink"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Rookie"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/abc_button_padding_horizontal_material"
+                        custom:typeface="Brandon_med"/>
+
+
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/badge_msg_default_badge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_bld"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+                        android:src="@drawable/batchicon_b"/>
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageType1"
+                        android:layout_alignLeft="@+id/imageType1"
+                        android:layout_alignRight="@+id/imageType1"
+                        android:background="@drawable/round_rect_pink"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Contender"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/abc_button_padding_horizontal_material"
+                        custom:typeface="Brandon_med"/>
+
+
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/badge_info_contender"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_bld"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+                        android:src="@drawable/batchicon_c"/>
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageType3"
+                        android:layout_alignLeft="@+id/imageType3"
+                        android:layout_alignRight="@+id/imageType3"
+                        android:background="@drawable/round_rect_pink"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="All Star"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/abc_button_padding_horizontal_material"
+                        custom:typeface="Brandon_med"/>
+
+
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/badge_info_al_star"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_bld"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageType4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+                        android:src="@drawable/batchicon_d"/>
+
+                    <com.uactiv.widgets.CustomTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageType4"
+                        android:layout_alignLeft="@+id/imageType4"
+                        android:layout_alignRight="@+id/imageType4"
+                        android:background="@drawable/round_rect_pink"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Ace"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/abc_button_padding_horizontal_material"
+                        custom:typeface="Brandon_med"/>
+
+
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/badge_info_ace"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_bld"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageType5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+                        android:src="@drawable/batchicon_e"/>
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageType5"
+                        android:layout_alignLeft="@+id/imageType5"
+                        android:layout_alignRight="@+id/imageType5"
+                        android:background="@drawable/round_rect_pink"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Champion"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/abc_button_padding_horizontal_material"
+                        custom:typeface="Brandon_med"/>
+
+
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/badge_info_champion"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_bld"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageType6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+                        android:src="@drawable/batchicon_f"/>
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageType6"
+                        android:layout_alignLeft="@+id/imageType6"
+                        android:layout_alignRight="@+id/imageType6"
+                        android:background="@drawable/round_rect_pink"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Hercules"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/abc_button_padding_horizontal_material"
+                        custom:typeface="Brandon_med"/>
+
+
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/badge_info_hercules"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_bld"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageType7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/abc_action_bar_subtitle_bottom_margin_material"
+                        android:src="@drawable/batchicon_g"/>
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageType7"
+                        android:layout_alignLeft="@+id/imageType7"
+                        android:layout_alignRight="@+id/imageType7"
+                        android:background="@drawable/round_rect_pink"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Challenger"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/abc_button_padding_horizontal_material"
+                        custom:typeface="Brandon_med"/>
+
+
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/badge_info_challenger"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_bld"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

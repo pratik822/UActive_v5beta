@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_250">
+    <RelativeLayout
+        android:id="@+id/topImage"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_5"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/colorPrimary">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_5"
+            android:gravity="center"
+            android:text="Leave us a comment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Done"
+            android:textSize="@dimen/text_size_4"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            custom:typeface="Brandon_med"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_alignTop="@+id/headerText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <com.uactiv.widgets.CustomEditText
+        android:id="@+id/comment_text"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="left|top"
+        android:hint="add review..."
+        android:padding="10dp"
+        android:textColor="@color/edit_msg_color"
+        android:textSize="@dimen/text_size_3"
+        custom:typeface="Brandon_med"
+        android:layout_below="@+id/topImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

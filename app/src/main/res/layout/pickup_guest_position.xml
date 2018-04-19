@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_gray" >
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/colorPrimary" >
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/top_back_arrow" />
+
+
+        <LinearLayout
+            android:id="@+id/linLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_finger_icon_selected"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvFinger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/tvChat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffff" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gridIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/grid_menu" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rrLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_below="@+id/includeTop"
+
+                class="doodleblue.doodleblue.uactiv.utils.WorkaroundMapFragment" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/includeTop"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@+id/ly_event"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true">
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:paddingTop="25dip"
+                    android:layout_marginLeft="-20dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/tvNamec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="2dip"
+                        app:cardElevation="3dp">
+                        <com.uactiv.widgets.CustomTextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prasheen Lodhia"
+                            android:textColor="@color/name_gray"
+                            android:textSize="@dimen/abc_text_size_medium_material"
+                            custom:typeface="Brandon_med"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp" />
+                    </android.support.v7.widget.CardView>
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvProfileType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_rect_green"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:text="Hosting"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_2"
+                        custom:typeface="Brandon_bld"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/ly_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/profile_name_box"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="-40dp">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvGameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Football Pick-Up"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_5"
+                    custom:typeface="Brandon_med"/>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvGameName"
+                    android:background="@color/sep_color" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvGameDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:padding="10dp"
+                    android:text="@string/pickup_gamedesc"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_reg"/>
+
+                <ImageView
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvGameDescription"
+                    android:layout_below="@+id/tvGameDescription"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/calnder_icon" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgCalendar"
+                    android:layout_alignTop="@+id/imgCalendar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgCalendar"
+                    android:gravity="center"
+                    android:text="Friday, December 26, 2015"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_reg"/>
+
+                <ImageView
+                    android:id="@+id/imgClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imgCalendar"
+                    android:layout_below="@+id/imgCalendar"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/timer_icon" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgClock"
+                    android:layout_alignLeft="@+id/tvDate"
+                    android:layout_alignTop="@+id/imgClock"
+                    android:gravity="center"
+                    android:text="6:00 pm"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_reg"/>
+
+                <ImageView
+                    android:id="@+id/imgLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imgClock"
+                    android:layout_below="@+id/imgClock"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/location_pin_icon" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgLocation"
+                    android:layout_alignLeft="@+id/tvTime"
+                    android:layout_alignTop="@+id/imgLocation"
+                    android:gravity="center"
+                    android:text="Khar Gymkhana, Khar West, Mumbai"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_reg"/>
+
+                <ImageView
+                    android:id="@+id/imgSpots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imgLocation"
+                    android:layout_below="@+id/imgLocation"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/user_icon_new" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvSpots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgSpots"
+                    android:layout_alignLeft="@+id/tvLocation"
+                    android:layout_alignTop="@+id/imgSpots"
+                    android:gravity="center"
+                    android:text="9 spots"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_reg"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/challengelay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ly_event"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_name_box"
+                    android:paddingTop="@dimen/margin_medium_size"
+                    android:paddingLeft="@dimen/margin_medium_size"
+                    android:paddingRight="@dimen/margin_medium_size"
+                    android:paddingBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                         />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/imageView2"
+                        android:layout_toLeftOf="@+id/imageView2"
+                         />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView"
+                        android:layout_alignTop="@+id/imageView"
+                        android:layout_marginLeft="@dimen/img_margin_neg"
+                        android:layout_marginRight="@dimen/img_margin_neg"
+                        android:layout_toLeftOf="@+id/imageView"
+                        android:src="@drawable/challenge_text_vs_img" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/imageView3"
+                        android:layout_marginRight="@dimen/margin_medium_size"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:src="@drawable/d_popup_challenge_txt" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvChallenge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView4"
+                        android:layout_below="@+id/imageView4"
+                        android:layout_marginTop="@dimen/margin_medium_size"
+                        android:text="Let everyone know that you're accepted this challenge on Facebook or Twitter! Good Luck!"
+                        android:textColor="@color/edit_msg_color"
+                        android:textSize="@dimen/text_size_2"
+                        custom:typeface="Brandon_med"/>
+
+                    <RelativeLayout
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvChallenge"
+                        android:layout_marginTop="30dp" >
+
+
+
+                        <com.uactiv.widgets.CustomButton
+                            android:id="@+id/share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:minHeight="35dp"
+                            android:text="share"
+                            android:textSize="@dimen/text_size_3"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:drawablePadding="5dp"
+                            android:background="@drawable/empty_rect_bg_colorpri"
+                            android:drawableLeft="@drawable/fb_icon"
+                            custom:typeface="Brandon_reg"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="7dp"/>
+                        <com.uactiv.widgets.CustomButton
+                            android:id="@+id/tweet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:minHeight="35dp"
+                            android:drawablePadding="5dp"
+                            android:layout_toLeftOf="@+id/imgTick"
+                            android:text="tweet"
+                            android:textSize="@dimen/text_size_3"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:background="@drawable/empty_rect_bg_colorpri"
+                            android:layout_toRightOf="@+id/share"
+                            android:layout_marginLeft="15dp"
+                            android:drawableLeft="@drawable/tweet_icon"
+                            custom:typeface="Brandon_reg"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/profileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ly_event"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/profile_name_box">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvAttending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Attending (5/9)"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_5"
+                    custom:typeface="Brandon_med"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvAttending"
+                    android:background="@color/sep_color" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/category_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/view2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/category_recycle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="(4 spots left)"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_5"
+                    custom:typeface="Brandon_med"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/requestLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_below="@+id/profileLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/profile_name_box"
+
+                android:visibility="gone">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvRequests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Requests"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_5"
+                    custom:typeface="Brandon_med"/>
+                <com.uactiv.widgets.CustomButton
+                    android:id="@+id/select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:textAllCaps="false"
+                    android:background="@null"
+                    android:text="Select All"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/name_gray"
+                    android:textSize="@dimen/text_size_5"
+                    custom:typeface="Brandon_med"/>
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvRequests"
+                    android:background="@color/sep_color" />
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="true"
+                    android:layout_below="@+id/view3"
+                    android:divider="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shareLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/requestLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:visibility="gone"
+                android:background="@drawable/profile_name_box" >
+
+                <com.uactiv.widgets.CustomButton
+                    android:id="@+id/shareText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Share this Pick Up!"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_4"
+                    android:background="@null"
+                    android:textAllCaps="false"
+                    custom:typeface="Brandon_med"/>
+
+                <ImageView
+                    android:id="@+id/shareImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gray_share_icon" />
+            </RelativeLayout>
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rrLayoutchat"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/mess1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/profile_name_box"
+                    android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    >
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/chatname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atish:"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_reg"
+                    />
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/chattxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guys, is there a fee? Let me know ..."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_reg"/>
+                </LinearLayout>
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/countCircle"
+                        android:layout_below="@+id/countCircle"
+                        android:text="2 hrs"
+                        android:textSize="11dp"
+                        custom:typeface="Brandon_med"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentRight="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/mess3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/profile_name_box"
+                    android:padding="10dp"
+                    android:layout_below="@+id/mess2"
+                    android:layout_alignParentRight="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        >
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You:"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_3"
+                            custom:typeface="Brandon_reg"
+                            />
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Come early."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_3"
+                            custom:typeface="Brandon_reg"/>
+                    </LinearLayout>
+                    <com.uactiv.widgets.CustomTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/countCircle"
+                        android:layout_below="@+id/countCircle"
+                        android:text="2 hrs"
+                        android:textSize="11dp"
+                        custom:typeface="Brandon_med"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentRight="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/mess2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/profile_name_box"
+                    android:padding="10dp"
+                    android:layout_below="@+id/mess1">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        >
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bhavik:"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_size_3"
+                            custom:typeface="Brandon_reg"
+                            />
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No,it's free"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_3"
+                            custom:typeface="Brandon_reg"/>
+                    </LinearLayout>
+                    <com.uactiv.widgets.CustomTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/countCircle"
+                        android:layout_below="@+id/countCircle"
+                        android:text="2 hrs"
+                        android:textSize="11dp"
+                        custom:typeface="Brandon_med"
+                        android:paddingLeft="10dp"
+                        android:layout_alignParentRight="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/declinebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="Decline"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_5"
+            custom:typeface="Brandon_med"/>
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/acceptbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#1CD591"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_5"
+            custom:typeface="Brandon_med"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomLayoutchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.uactiv.widgets.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="start typing..."
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_3"
+            custom:typeface="Brandon_reg"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+
+        <com.uactiv.widgets.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_4"
+            custom:typeface="Brandon_bld"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomLayoutonebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/onebtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1CD591"
+            android:text="Request Pending"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_5"
+            custom:typeface="Brandon_med"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

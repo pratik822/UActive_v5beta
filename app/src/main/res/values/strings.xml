@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">UACTIV</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_mylog">My Log</string>
+    <string name="nav_item_trends">Trends</string>
+    <string name="nav_item_alerts">Alerts</string>
+    <string name="nav_item_profile">My Profile</string>
+    <string name="nav_item_carprofile">Car Profile</string>
+    <string name="nav_item_doc">Document</string>
+    <string name="nav_item_help">Help</string>
+    <string-array name="certs">
+        <item>MIIEqDCCA5CgAwIBAgIJA071MA0GCSqGSIb3DQEBBAUAMIGUMQsww...</item>
+    </string-array>
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_mylog</item>
+        <item>@string/nav_item_trends</item>
+        <item>@string/nav_item_alerts</item>
+        <item>@string/nav_item_profile</item>
+        <item>@string/nav_item_carprofile</item>
+        <item>@string/nav_item_doc</item>
+        <item>@string/nav_item_help</item>
+    </string-array>
+
+    <string name="title_trends">Trends</string>
+    <string name="title_mylog">My Log</string>
+    <string name="title_home">Home</string>
+    <string name="Rs">\u20B9</string>
+
+    <string name="engine">Engine Oil Change</string>
+    <string name="air">Air Pressure Check</string>
+    <string name="brake">Braked / Brake Lining Check</string>
+
+
+    <string name="title">RangeBar</string>
+    <string name="tickCount">tickCount = 7</string>
+    <string name="tickHeight">tickHeight = 24</string>
+    <string name="barWeight">barWeight = 2</string>
+    <string name="barColor">barColor = #CCCCCC</string>
+    <string name="connectingLineWeight">connectingLineWeight = 4</string>
+    <string name="connectingLineColor">connectingLineColor = #33B5E5</string>
+    <string name="thumbRadius">thumbRadius = N/A</string>
+    <string name="thumbColorNormal">thumbColorNormal = N/A</string>
+    <string name="thumbColorPressed">thumbColorPressed = N/A</string>
+    <string name="confirmNewColor">New</string>
+    <string name="confirmDefaultColor">Default</string>
+    <string name="colorPickerTitle">Select a Color</string>
+    <string name="resetThumbColors">Reset Thumb Colors</string>
+    <string name="leftIndexValue">0</string>
+    <string name="leftIndex">leftIndex</string>
+    <string name="rightIndexValue">6</string>
+    <string name="rightIndex">rightIndex</string>
+    <string name="refresh">Refresh Indices</string>
+    <string name="demo_min_label"></string>
+    <string name="demo_max_label"></string>
+    <string name="spinner_title">Select an Activity</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <!--  -->
+
+
+    <!-- challenge text -->
+    <string name="challenge_text">Make your buddy up request competitive by challenging Prasheen. Game on!</string>
+    <string name="challenge_on_text">Yes! it\'s on</string>
+    <string name="profile_text">I\'m true lover of life, I play squash religiously.. Hit me up and we can have a game sometime. I\'m about Intermediate level..</string>
+    <string name="pickup_gamedesc">We\'re meeting this friday to play some football join us , advanced players only. There is a green fee of Rs.400 </string>
+    <string name="profile_details">yo. Hit me up to play squash, ping pong, or for a run. I\'m a Bombay / Toronto boy.</string>
+
+    <string-array name="state_arrays">
+        <item>Skateboarding</item>
+        <item>Squash</item>
+        <item>Swimming</item>
+    </string-array>
+
+
+    <string name="facebook_app_id">1578431575817771</string>
+
+
+    <string name="user_alredy_exsit">User already exists,Please login with facebook</string>
+
+    <string name="sentTokenToServer">sentTokenToServer</string>
+    <string name="registrationComplete">registrationComplete</string>
+    <!--<string name="pickupnote_one">Consider punctulality,sportsmanship,attitude,safety and the quality of the experience</string>-->
+    <string name="pickupnote_one">Things to consider - Responsiveness, Punctuality, Skill Level and Attitude. Your rating is anonymous.</string>
+    <string name="pickupnote_two"><b>Note:</b> We may share your feedback with the host to help them improve</string>
+
+    <!--<string name="buddyupnote_one"><b>Note: Your rating will be anonymously averaged </b>\n Consider punctulality, sportsmanship, attitude,safety and how accurate they rated their own skill level</string>-->
+    <string name="buddyupnote_one">Things to consider - Responsiveness, Punctuality, Skill Level and Attitude. Your rating is anonymous.</string>
+    <string name="buddyupnote_two"><b>Note:</b> Comments will not be seen by your buddy</string>
+
+    <string name="pickup_share_text">Check out this exciting Pick Up on UACTIV!</string>
+    <string name="buddyup_share_text">Challenge accepted on UACTIV! May the better player win! Match.Set.Game</string>
+
+    <string name="venue_note_two"><b>Note:</b> We may share your feedback with the host to help them improve</string>
+    <string name="fav_removed">Favorite Removed</string>
+    <string name="group_created_msg">" group created successfully!"</string>
+    <string name="group_deleted_msg">Group deleted Successfully!</string>
+    <string name="buddy_up_aband_msg">You have successfully left the Buddy Up!</string>
+    <string name="pick_up_aband_msg">You have successfully left the Pick Up!</string>
+    <string name="cancel_buddyup_msg">You have cancelled the Buddy Up!</string>
+    <string name="pickup_cancelled_msg">You have cancelled the Pick Up!</string>
+    <string name="msg_buddyup_accepted">Request Accepted!</string>
+    <string name="msg_buddyup_declined">Declined!</string>
+    <string name="msg_buddyup_request_pending">Request Pending!</string>
+    <string name="msg_pickup_request_pending">Request Pending!</string>
+    <string name="msg_buddyup_abanded">Abandoned!</string>
+    <string name="msg_buddy_up_cancelled">Cancelled!</string>
+    <string name="msg_pickup_request_accepted">Request Accepted!</string>
+    <string name="msg_pickup_req_declined">Request Declined!</string>
+    <string name="msg_pickup_abandoned">Abandoned!</string>
+    <string name="msg_pickup_cancelled">Request Cancelled!</string>
+    <string name="msg_pickup_request_cancelled">Request Cancelled!</string>
+    <string name="msg_schedule_changed">Schedule has been changed!</string>
+    <string name="msg_buddyup_request_expired">Expired!</string>
+    <string name="msg_pickup_request_expired">Expired!</string>
+    <string name="title_cancel_pickup">Cancel Pick Up</string>
+    <string name="title_cancel_buddyup">Cancel Buddy Up</string>
+
+    <string name="title_cancel_pickup_request">Cancel Pick Up Request</string>
+    <string name="title_abandon_pickup">Abandon Pick Up</string>
+    <string name="title_abandon_buddyup">Abandon Buddy Up</string>
+    <string name="alert_message">Are you sure?,You want to %2$d.</string>
+    <string name="msg_pickup_created">Pick Up Created</string>
+    <string name="empty_msg_no_buddy_up_list">Opps! No results found, try searching for another person or another activity</string>
+    <string name="empty_msg_no_pick_up_list">Damn! No results found, try searching for another activity or create your own Pick Up</string>
+    <string name="empty_view_no_internet_connection">Woah! It\'s the 21st century and it seems like you don\'t have an active internet connection</string>
+    <string name="msg_pickup_expired">Expired!</string>
+    <string name="empty_view_msg_schedule">See your scheduled Buddy Up\'s and Pick Up\'s here</string>
+    <string name="empty_view_msg_notifications">Don\'t be lazy! Buddy Up or Pick Up to see what happens here.</string>
+    <string name="empty_view_msg_notifications_business_user">Don\'t be lazy! Pick Up to see what happens here.</string>
+    <string name="empty_view_no_fav">See your favourite Buddy profiles here</string>
+    <string name="empty_view_msg_no_groups">Create a group with your favourite Buddies</string>
+    <string name="msg_report_user">User has been reported to UACTIV</string>
+    <string name="msg_favourite_added">Added to Favourites!</string>
+    <string name="msg_favourite_removed">Removed from Favourites!</string>
+    <string name="msg_forgot_password">Password recovery link sent to mail</string>
+    <string name="msg_email_id_already_exist">User already exists</string>
+    <string name="msg_email_id_not_exist">UACTIV account does not exist.</string>
+    <string name="msg_pick_up_completed">Completed!</string>
+    <string name="meg_login_failed">Login failed</string>
+    <string name="msg_buddy_up_completed">Buddy Up Completed</string>
+    <string name="tutorial_buddy_up">Find and connect with peeps around you who share the same activity interest(s)</string>
+    <string name="tutorial_buddy_up_business">See relevant profiles of people around your business </string>
+    <string name="tutorial_pick_up">Join a group game,event or class around you. Pick ups shown by default are from your activity interest(s)</string>
+    <string name="tutorial_pick_up_business">Find a group game,event or class around you. Pick ups shown by default are from your activity interest(s)</string>
+    <string name="tutorial_got_it">GOT IT</string>
+    <string name="tutorial_msg_create_pickup">Host your own group game,event or class</string>
+    <string name="tutorial_msg_view_buddy_request">Connect and schedule an activity with your buddy</string>
+    <string name="tutorial_msg_fav">Tap to add user to your favourites and easily connect with them later.</string>
+    <string name="tutorial_msg_view_activity_details">View activity details</string>
+    <string name="tutorils_msg_view_chat">View updates and chat once activity is confirmed</string>
+    <string name="badge_msg_default_badge">Default badge</string>
+    <string name="badge_info_contender">2 Buddy Up\'s or Pick Up\'s</string>
+    <string name="badge_info_al_star">5 Buddy Up\'s or Pick Up\'s</string>
+    <string name="badge_info_ace">9 Buddy Up\'s or Pick Up\'s</string>
+    <string name="badge_info_champion">14 Buddy Up\'s or Pick Up\'s</string>
+    <string name="badge_info_hercules">20 Buddy Up\'s or Pick Up\'s</string>
+    <string name="badge_info_challenger">Complete 25 challenges</string>
+    <string name="msg_onboarding_review">Rate your buddy and unlock cool rewards as you go.</string>
+    <string name="msg_onboarding_find_people_nearby"><![CDATA[Find people nearby that are into the same sports & Activities.]]></string>
+    <string name="msg_onboarding_buddy_up">Buddy up one to one, join a group activity.</string>
+    <string name="msg_onboarding_chat">chat with your buddy or group.</string>
+    <string name="dialog_msg_booking_info">Please pick a location from Suggested Locations in the Address field if you want to book a facility for this activity.</string>
+    <string name="dialog_msg_confirm_booking">Would you like us to book this facility for you ? (Note: You will get a confirmation via email once your booking is confirmed)</string>
+    <string name="dialog_booking_title">Book a Venue</string>
+    <string name="policy"><![CDATA[Privacy Policy UACTIV Last Updated: March 31, 2016. This privacy policy describes how UActive Technology Private Limited (“Us”, “We”, “Our” or “UACTIV”) collects, shares and uses information about the user and their choices when using our website or application (our “Service”). We request you to read this Privacy Policy carefully when using our Service or transacting business with us. By using our Service, you are accepting the practices and procedures described in this Privacy Policy. 1. Information we collect. We collect “personal information” that helps identify or contact you such as name, email address, age, gender, number, address, photo, activity interest(s) and other information that does not identify you. By using the Service, you are authorizing us to collect, analyze, retain and research data associated to the provision of the Service. Information provided by you. To register on UACTIV you will be asked to sign up using your personal information and/or using your Facebook account. If you do so, you authorize us to access the personal information provided by you and/or certain Facebook account information (consistent with your privacy settings in Facebook) such as email address, age, gender, friends list and photos. You will also be asked to allow UActiv to collect your location information from your device when you download or use the Service. In addition, we may collect and store any personal information you provide while using our Service or in some other manner. This may include personal information such as your name, email address, age, gender, number, address, photo, activity interest(s), and, if you transact business with us your financial information. You may also provide us a personal description and preferences for recommendations, such as search distance, gender and activity preference. If you chat with other UACTIV users, you provide us the content of your chats, and if you contact us with a customer service or other inquiry, you provide us with the content of that communication. Information collected automatically. When you use our Service we may collect information automatically from your browser or device to diagnose issues, improve and administer our Service, analyze trends and prevent fraud. This Information might include your IP address, domain name, device type and ID, browser type, operating systems, version, date & time stamps and geolocation. Cookies We may use cookies to give you smooth access and keep track of certain information about your choices while using our Service. We may collect information such as pages you visit, date & time of your visit and the links you click. This information helps us understand different areas of our Service. If you choose to disable cookies your experience may not be optimal and some features might not work as intended. Web Beacons / Pixel tags We may use web beacons (also called Pixel tags or clear GIFs) in email communications in order to access cookies, understand user behavior and popularity of our features. Mobile Analytics We may use mobile analytics software to gather information to understand and improve the functionality and features of our Service. This information might include how often you use our Service, pages visited, incoming traffic and performance data. 2. USE OF THE INFORMATION WE COLLECT We might use information collected about you to: Administer, deliver and improve our Service. Provide customer support. Manage your account. Verify your identity. Research and analyze your use of our Service. Communicate with you via email, phone, and mobile devices about products or services from us or other third parties. Deliver prizes for contests and rewards. Develop, analyze and present content personalized to your interests on our Service and other sites. 3. SHARING OF YOUR INFORMATION Personal Information We will not sell or share your personal information to any third parties other than as mentioned in this privacy policy. UACTIV may disclose your personal information if required by law or if we believe disclosure is reasonable to comply with the law, protect UACTIV’s rights or property, to protect someone’s health or safety and for investigating purposes. We may share your personal information with third parties such as consultants and service providers who need access to this data to perform certain services on our behalf. These services may include customer service, marketing support, analytics, ad tracking, contests, surveys, and other features offered via our Service. These third parties are not allowed to share or use such information for any other purpose. UACTIV may share your email with carefully selected third parties so they can offer your goods and services of interest to you. You can change your email preference to not receive such offers at any time. With Other Users Other users of our Service can view your UACTIV profile. Your profile lets other users view information you have provided to us directly or through Facebook, such as photos, name, age, your personal description, approximate distance away and information you have in common with the person viewing your profile, such as common Facebook friends and common activity interests. If your sent BuddyUp or PickUp request is accepted for an activity, you will be able to chat with that person and/or group. If you chat with other users, they will see the content of your chat. Social Media Sharing Our Service is social by nature and allows you to share information about yourself and the activities you do such as BuddyUp Challenges, Pick Ups you are a part of, comments, invitations and virtual badge achievements on social networking sites. The privacy polices of such social networking sites may defer from that of our Service. We urge you to review applicable privacy policies of these sites. UACTIV is not responsible for privacy policies and practices of social networking sites. 4. Service area beyond UACTIV’s control Third Party Websites Our Service contains links to other websites or apps that do not operate under this privacy policy. We are not responsible for the privacy policies and practices of other sites. We urge you to review applicable privacy policies of these sites. Public Forums Our Service provides interactive messaging channels such as chat, message boards. Any information disclosed in these channels becomes public information, please be cautious when deciding to disclose personal information. 5. Children’s Privacy We require users to be 16 years of age or above to use our Service. 6. Security We have security measures in place to prevent unauthorized access, alteration and disclosure of the information we obtain from you. However, we are not liable for any such unauthorized access, alteration and disclosure. 7. Policy Update We reserve the right to update this privacy policy. Any update will be effective immediately upon updating this privacy policy on our Service. We will revise the “last updated” date above and you should review this policy from time to time to be updated about any changes.]]></string>
+    <string name="privacy_policy_url">privacy-policy.html</string>
+    <string name="privacy_terms_url">terms-of-use.html</string>
+    <string name="support_mail_id">hi@uactiv.co</string>
+    <string name="venue_note_one"><![CDATA[Things to consider - Cleanliness, Ambience, Management, Accessibility, Service & Amenities. Your rating is anonymous]]></string>
+    <string name="msg_undefined_error">Something went wrong!</string>
+
+    <!--<string name="buddyupnote_one_tem"><b>Note: Your rating will be anonymously averaged </b>\n Consider punctulality, sportsmanship, attitude,safety and how accurate they rated their own skill level</string>-->
+
+
+    <string name="staging_key">:beta</string>
+    <string name="pickup_invited">Pick Up Invited!</string>
+    <string name="pickup_created">Pick Up Created!</string>
+    <string name="pickup_edited">Pick Up Edited!</string>
+
+    <string name="buddyup_created">Buddy Up Created!</string>
+    <string name="buddyup_edited">Buddy Up Edited!</string>
+    <string name="buddyups">Buddy Up\'s : </string>
+    <string name="pickups">Pick Up\'s : </string>
+    <string name="tag_uactiv">\n <b>#UActiv</b></string>
+
+    <string name="badge_update_txt">Congratulations you have graduated to the next badge level! Check your email to see your reward.</string>
+    <string name="msg_title_waiting_list">Waiting list</string>
+    <string name="create_event_description_hint">Add some more information such as things to bring,landmarks or any fees to join the activity</string>
+    <string name="hint_buddyup_request">add a message</string>
+    <string name="msg_duplicate_create_pickup">You have an activity scheduled at this time. Would you still like to proceed?</string>
+    <string name="msg_duplicate_create_buddy_up">You have an activity scheduled at this time. Would you still like to proceed?</string>
+    <string name="msg_duplicate_request_join">You have an activity scheduled  at this time. Would you still like to proceed?</string>
+    <string name="msg_duplicate_accept_buddy_up_request">You have an activity scheduled at this time. Would you still like to proceed?</string>
+    <string name="msg_buddy_up_start_time_error">Start time should be at least 30 minutes in the future.</string>
+    <string name="txt_applozic_custom_msg_buddyup_cancelled">Buddy Up Cancelled</string>
+    <string name="txt_applozic_custom_msg_pick_up_cancelled">Pick Up Cancelled</string>
+    <string name="txt_applozic_custom_msg_abandoned">"Abandoned"</string>
+    <string name="txt_request_to_join">Request to join</string>
+    <string name="title_activity_pickup_listing">PickupListing</string>
+    <string name="title_activity_explorar_">Explorar_</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="live_updates_more"><![CDATA[Live updates & more!]]></string>
+
+</resources>

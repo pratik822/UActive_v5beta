@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:background="?attr/colorPrimary">
+
+       <!-- <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="Select your pick up point"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/top_back_arrow"
+            android:textColor="@color/white"/>-->
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/top_back_arrow"
+            android:text="Select location"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffff"
+            custom:typeface="Brandon_med"
+            android:layout_toLeftOf="@+id/btnDone"
+            android:layout_toStartOf="@+id/btnDone" />
+
+
+        <com.uactiv.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Done"
+            android:padding="@dimen/dp_10"
+            android:id="@+id/btnDone"
+            android:textColor="#ffff"
+            android:textSize="@dimen/dp_16"
+            custom:typeface="Brandon_med"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_done"
+        android:layout_below="@+id/search_lay" />
+
+<LinearLayout
+    android:id="@+id/search_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_below="@+id/topbar">
+
+
+    <com.uactiv.utils.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/abc_button_padding_horizontal_material"
+        android:layout_marginBottom="@dimen/abc_button_padding_horizontal_material"
+        android:editable="false"
+        android:drawableLeft="@drawable/search_icon"
+        android:hint="pick your point"
+        android:background="@drawable/search_box"
+        android:paddingLeft="30dp"
+        android:paddingRight="23dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        custom:typeface="Brandon_med"/>
+
+
+
+
+</LinearLayout>
+   <!-- <doodleblue.doodleblue.com.utils.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:layout_below="@+id/topbar"
+        android:hint="Enter or pick your point" />-->
+
+
+    <com.uactiv.widgets.CustomButton
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_5"
+        android:textAllCaps="false"
+        android:background="#1CD591"
+        custom:typeface="Brandon_bld"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/map_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/green_mappin"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/ly_pickup_events"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/mapDetails"
+            layout="@layout/business_mapview_inflate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

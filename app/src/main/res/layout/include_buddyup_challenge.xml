@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_name_box"
+        android:padding="@dimen/margin_medium_size" >
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            app:view_shadowRadius="1dp"
+            app:view_shadowDx="1dp"
+            app:view_shadowDy="0dp"
+            app:view_shadowColor="@color/grey"
+            app:view_borderWidth="1dp"
+            app:view_borderColor="@android:color/white"
+            android:scaleType="centerCrop"
+           />
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_alignTop="@+id/imageView2"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            android:layout_toLeftOf="@+id/imageView2"
+            app:view_shadowRadius="1dp"
+            app:view_shadowDx="1dp"
+            app:view_shadowDy="0dp"
+            app:view_shadowColor="@color/grey"
+            app:view_borderWidth="1dp"
+            app:view_borderColor="@android:color/white"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="@dimen/img_margin_neg"
+            android:layout_marginRight="@dimen/img_margin_neg"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:src="@drawable/challenge_text_vs_img" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:src="@drawable/challenge_text_img"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:layout_toStartOf="@+id/imageView3" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvChallenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignRight="@+id/imageView1"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="@dimen/margin_medium_size"
+            android:textColor="@color/edit_msg_color"
+            android:textSize="@dimen/text_size_2"
+            custom:typeface="Brandon_med"/>
+
+        <RelativeLayout
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChallenge"
+            android:layout_marginTop="@dimen/margin_small_size" >
+
+            <CheckBox
+                android:id="@+id/imgTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/checkbox"
+                android:checked="true" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvGameStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_medium_size"
+                android:layout_toLeftOf="@+id/imgTick"
+                android:text="@string/challenge_on_text"
+                android:textSize="@dimen/text_size_3" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

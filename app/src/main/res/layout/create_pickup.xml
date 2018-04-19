@@ -1,0 +1,390 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e9e9e9">
+
+    <RelativeLayout
+        android:id="@+id/tobar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/top_back_arrow"/>
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/title_create_pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffff"
+            custom:typeface="Brandon_med"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/root_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_create"
+        android:layout_below="@+id/tobar"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e9e9e9"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/profile_name_box"
+                        android:padding="10dp"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/down_arrow"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.uactiv.widgets.CustomButton
+                            android:id="@+id/btnDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/profile_name_box"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAllCaps="false"
+                            android:textColor="@color/date_color"
+                            android:textSize="@dimen/text_size_3"
+                            custom:typeface="Brandon_med"/>
+
+                        <com.uactiv.widgets.CustomButton
+                            android:id="@+id/btnTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/profile_name_box"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Set Time"
+                            android:textAllCaps="false"
+                            android:textColor="@color/date_color"
+                            android:textSize="@dimen/text_size_3"
+                            custom:typeface="Brandon_med"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <com.uactiv.widgets.CustomEditText
+                        android:id="@+id/locationaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/profile_name_box"
+                        android:drawableRight="@drawable/right_arrow"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#57657f"
+                        custom:typeface="Brandon_med"/>
+
+                    <!-- <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                         android:layout_centerVertical="true"
+                         android:layout_marginRight="10dp"
+                         android:background="@drawable/right_arrow" />-->
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/round2"
+                        android:padding="7dp"
+                        android:text="  Number of People  "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#ffff"
+                        custom:typeface="Brandon_med"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/Btn_sub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/sub_btn"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3">
+
+                            <com.uactiv.widgets.CustomEditText
+                                android:id="@+id/tv_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/profile_name_box"
+                                android:gravity="center"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:hint="No limit"
+                                android:maxLength="4"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#57657f"
+                                custom:typeface="Brandon_med"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/Btn_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/add_btn"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/public_active_btn"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.uactiv.widgets.CustomTextView
+                            android:id="@+id/Btn_public"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            custom:typeface="Brandon_med"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/Btn_private"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvPublicPrivate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="(Anybody will see this pickup)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#57657f"
+                    custom:typeface="Brandon_med"/>
+
+                <RelativeLayout
+                    android:id="@+id/inviteLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/profile_name_box">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvInvitePeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Invite People"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_4"
+                        custom:typeface="Brandon_med"/>
+
+                    <RelativeLayout
+                        android:id="@+id/invite_count_container"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/imgRightArrow"
+                        android:background="@drawable/invite_count_circle">
+
+                        <com.uactiv.widgets.CustomTextView
+                            android:id="@+id/invite_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="10"
+                            android:textColor="@color/white"
+                            custom:typeface="Brandon_med"/>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imgRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/right_arrow"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/category_recycle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <com.uactiv.widgets.CustomEditText
+                        android:id="@+id/editInformation"
+                        android:layout_width="fill_parent"
+                        android:inputType="textMultiLine"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_box"
+                        android:gravity="left|top"
+                        android:hint="@string/create_event_description_hint"
+                        android:padding="10dp"
+                        android:textColor="@color/edit_msg_color"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_med"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.uactiv.widgets.CustomButton
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#1CD591"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_5"
+        custom:typeface="Brandon_bld"/>
+
+    <include layout="@layout/loder_view"/>
+
+</RelativeLayout>

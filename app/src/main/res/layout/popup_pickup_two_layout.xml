@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="@dimen/leftrightpadding"
+    android:paddingRight="@dimen/leftrightpadding"
+   >
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="470dp"
+        android:background="@drawable/curve"
+        android:padding="4dp">
+
+        <com.uactiv.activity.RoundRectCornerImageView
+            android:id="@+id/iv_imagelo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/curve"
+            android:scaleType="fitXY"
+            android:src="@drawable/genral">
+
+        </com.uactiv.activity.RoundRectCornerImageView>
+<RelativeLayout
+    android:id="@+id/btn_close"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:scaleType="fitXY"
+        android:src="@drawable/crosses"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

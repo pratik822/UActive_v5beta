@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="25dp"
+    android:background="@drawable/curve">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1f4fc">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/textView8"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Rate our App"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3a445e"
+            android:textSize="20sp"
+            custom:typeface="Brandon_med" />
+
+        <RelativeLayout
+            android:id="@+id/iv_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:src="@drawable/crosses"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/city" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="If you love our app, please take a moment to rate in the play store."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3a445e"
+            custom:typeface="Brandon_reg" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="200dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/star" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rel"
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/btn_later"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shapepopup"
+            android:text="Later"
+            android:textAllCaps="false"
+            android:textSize="@dimen/medium_normal_size"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/btn_rate"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shapepopup"
+            android:text="Rate"
+            android:textAllCaps="false"
+            custom:typeface="Brandon_med" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

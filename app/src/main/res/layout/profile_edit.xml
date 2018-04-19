@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:background="@color/sep_color"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" >
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            android:background="@null"
+            android:textAllCaps="false"
+            custom:typeface="Brandon_reg"/>
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/tvSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            custom:typeface="Brandon_reg"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlayout"
+        android:layout_marginBottom="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/rrLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_320dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                 />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/camera_icon" />
+
+            <TextView
+                android:id="@+id/tvDummy"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvAboutYou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvDummy"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/tvDummy"
+                android:background="@drawable/naviblue_9patch"
+                android:gravity="left|center"
+                android:paddingLeft="8dp"
+                android:text="About You"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med"/>
+
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/editFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvAboutYou"
+                android:layout_alignRight="@+id/tvAboutYou"
+                android:layout_below="@+id/tvAboutYou"
+                android:layout_marginTop="15dp"
+                android:inputType="textCapSentences"
+                android:hint="First Name"
+                android:background="@drawable/text_box_small"
+                android:ems="10"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med">
+            </com.uactiv.widgets.CustomEditText>
+
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/editLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/editFirstName"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/tvDummy"
+                android:background="@drawable/text_box_small"
+                android:ems="10"
+                android:hint="Last Name"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med">
+            </com.uactiv.widgets.CustomEditText>
+
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/editDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editFirstName"
+                android:layout_alignRight="@+id/editLastName"
+                android:layout_below="@+id/editFirstName"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_box"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:hint="Say something about yourself"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med"/>
+
+            <RelativeLayout
+                android:id="@+id/lyEarly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editFirstName"
+                android:layout_alignRight="@+id/editFirstName"
+                android:layout_below="@+id/editDetail"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@+id/lyGender">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/spinEarly"
+                    android:layout_width="wrap_content"
+                    android:hint="Date Of Birth"
+                    android:editable="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    android:textStyle="bold"
+                    custom:typeface="Brandon_med"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/label_btn"
+                    android:textAlignment="center"
+                    android:layout_weight="1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editLastName"
+                android:layout_alignRight="@+id/editLastName"
+                android:layout_below="@+id/editDetail"
+                android:layout_marginTop="10dp" >
+
+                <Spinner
+                    android:id="@+id/spinGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/label_btn"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lyEarly"
+                android:layout_alignRight="@+id/lyEarly"
+                android:layout_below="@+id/lyEarly"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/naviblue_9patch"
+                android:gravity="center"
+                android:text="Activities (up to 4)"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med"/>
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvSkillLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editLastName"
+                android:layout_alignRight="@+id/editLastName"
+                android:layout_below="@+id/lyEarly"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/naviblue_9patch"
+                android:gravity="center"
+                android:text="Skill Level"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med"/>
+
+            <LinearLayout
+                android:id="@+id/lySkating"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvActivity"
+                android:layout_alignRight="@+id/tvSkillLevel"
+                android:orientation="vertical"
+                android:layout_below="@+id/tvSkillLevel"
+                android:layout_marginTop="15dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_15">
+                    <Spinner
+                        android:id="@+id/spinSkating"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+                        <RatingBar
+                            android:id="@+id/ratingBar1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="1"
+                            android:numStars="3"
+                            style="@style/CustomRatingBar"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_15">
+                    <Spinner
+                        android:id="@+id/spinYoga"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+                        <RatingBar
+                            android:id="@+id/ratingBar2"
+                            android:layout_width="wrap_content"
+                            android:stepSize="1"
+                            android:layout_height="wrap_content"
+                            android:numStars="3"
+                            style="@style/CustomRatingBar" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_15">
+                    <Spinner
+                        android:id="@+id/spinRunning"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+                        <RatingBar
+                            android:id="@+id/ratingBar3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="1"
+                            android:numStars="3"
+                            style="@style/CustomRatingBar" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_15">
+                    <Spinner
+                        android:id="@+id/spinRunnin4"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"/>
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+                        <RatingBar
+                            android:id="@+id/ratingBar4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="1"
+                            android:numStars="3"
+                            style="@style/CustomRatingBar" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+</RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <include layout="@layout/loder_view"/>
+
+</RelativeLayout>

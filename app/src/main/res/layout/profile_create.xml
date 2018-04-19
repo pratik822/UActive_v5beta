@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+
+
+    <ScrollView
+        android:id="@+id/detailsscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeLayout1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_15">
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 >
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center_vertical"
+                     android:padding="@dimen/activity_horizontal_margin">
+                   &lt;!&ndash;  <doodleblue.doodleblue.com.widgets.RoundedImageView
+                         android:id="@+id/edit_propic"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/image_placeholder_profile"
+                         android:background="@null"
+                         android:contentDescription="@null"
+                         android:layout_gravity="center_horizontal"/>&ndash;&gt;
+
+                     <com.alexzh.circleimageview.CircleImageView
+                         xmlns:app="http://schemas.android.com/apk/res-auto"
+                         android:id="@+id/edit_propic"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         app:civ_border_width="2dp"
+                         android:padding="15dp"
+
+                         android:src="@drawable/image_placeholder_profile"
+                         android:layout_gravity="center_horizontal"
+                         app:civ_border_color="#FFFFFF"/>
+
+
+                     <doodleblue.doodleblue.com.widgets.CustomTextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="upload photo"
+                         android:textAllCaps="false"
+                         android:textSize="@dimen/text_size_4"
+                         custom:typeface="Brandon_reg"
+                         android:textColor="@color/white"
+                         android:layout_gravity="center_horizontal"
+                         android:textAppearance="?android:attr/textAppearanceSmall"
+                         android:layout_marginTop="@dimen/dp_5"/>
+                 </LinearLayout>
+
+                 <doodleblue.doodleblue.com.widgets.CustomTextView
+                     android:id="@+id/profile_name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Welcome Kunal!"
+                     android:textAllCaps="false"
+                     custom:typeface="Brandon_med"
+                     android:layout_gravity="center_vertical" android:textColor="@color/white"
+                     android:textAppearance="?android:attr/textAppearanceLarge"/>
+             </LinearLayout>-->
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <LinearLayout
+                    android:id="@+id/profilelay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/edit_propic"
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_80"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_profile"
+                        app:view_backgroundColor="@color/colorPrimary"
+                        app:view_borderColor="@android:color/white"
+                        app:view_borderWidth="1dp"
+                        app:view_shadowColor="@color/grey"
+                        app:view_shadowDx="1dp"
+                        app:view_shadowDy="0dp"
+                        app:view_shadowRadius="1dp" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="UPLOAD PHOTO"
+
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_reg" />
+                </LinearLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_toEndOf="@+id/profilelay"
+                    android:layout_toRightOf="@+id/profilelay"
+                    android:text="Welcome"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    custom:typeface="Brandon_med" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/container_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sep_color_trans"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/spinEarly"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/label_btn"
+                        android:gravity="center"
+                        android:text="Date Of Birth"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold"
+                        custom:typeface="Brandon_med" />
+
+                    <Spinner
+                        android:id="@+id/spinGender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvActivity"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Activities (up to 4)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_med" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvSkillLevel"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="Skill Level"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_med" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinSkating"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar1"
+                            style="@style/CustomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="3"
+                            android:stepSize="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinYoga"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar2"
+                            style="@style/CustomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="3"
+                            android:stepSize="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinRunning"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar3"
+                            style="@style/CustomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="3"
+                            android:stepSize="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinRunnin4"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/label_btn"
+                        android:spinnerMode="dropdown"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar4"
+                            style="@style/CustomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="3"
+                            android:stepSize="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.uactiv.widgets.CustomEditText
+                    android:id="@+id/editDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/text_box"
+                    android:gravity="left|top"
+                    android:hint="Say something about yourself"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/dp_15">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/am_beta_profile"
+            style="@style/CustomCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_4"
+            android:visibility="gone"
+            android:text="I'm a beta user"
+            android:background="@color/transparent"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white" />
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/am_beta_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@color/buddyup_bg"
+            android:text="Get Active!"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            custom:typeface="Brandon_med" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/loder_view" />
+
+</RelativeLayout>

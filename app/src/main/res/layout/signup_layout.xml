@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCF1FC"
+    android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="6dp"
+            >
+
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/fname"
+                android:layout_width="@dimen/custom_edittext_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_underline"
+                android:drawableLeft="@drawable/ic_newprofile"
+                android:layout_marginBottom="2dp"
+                android:drawablePadding="12dp"
+                android:hint="First Name"
+                android:padding="@dimen/edt_padding"
+                android:layout_marginTop="@dimen/img_padding_top"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/medium_size"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/lname"
+                android:layout_width="@dimen/custom_edittext_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/edit_text_underline"
+                android:drawableLeft="@drawable/ic_newprofile"
+                android:drawablePadding="12dp"
+                android:hint="Last Name"
+                android:padding="@dimen/edt_padding"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/medium_size"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/signin_email_ed"
+                android:layout_width="@dimen/custom_edittext_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/edit_text_underline"
+                android:drawableLeft="@drawable/ic_mynewemail"
+                android:drawablePadding="@dimen/edt_drawable_padding"
+                android:hint="E-mail address"
+                android:padding="@dimen/edt_padding"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/medium_size"
+                custom:typeface="Brandon_med" />
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/signin_pwd_ed"
+                android:layout_width="@dimen/custom_edittext_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_underline"
+                android:drawableLeft="@drawable/ic_mynewpassword"
+                android:drawablePadding="@dimen/edt_drawable_padding"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/edt_padding"
+                android:layout_marginBottom="2dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/medium_size"
+                custom:typeface="Brandon_med" />
+
+
+
+            <com.uactiv.widgets.CustomButton
+                android:id="@+id/signup"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:background="@drawable/btn_shapenew"
+                android:layout_marginTop="@dimen/custom_margin_topsignup"
+                android:layout_marginBottom="2dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="@dimen/medium_normal_size"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomButton
+                android:id="@+id/fbbtn"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/btn_shape"
+                android:drawableLeft="@drawable/facebook"
+                android:layout_marginTop="@dimen/custom_margin_topsignup"
+                android:gravity="left|center"
+                android:text="Sign up with Facebook"
+                android:textAllCaps="false"
+                android:textSize="@dimen/medium_normal_size"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/txt_gestlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/custom_margin_topsignup"
+                android:layout_marginBottom="2dp"
+                android:text="Continue as a guest"
+                android:textColor="#90BEE2"
+                android:textSize="@dimen/medium_gest"
+                custom:typeface="Brandon_bld" />
+            <com.uactiv.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/custom_margin_topsignupother"
+                android:gravity="center"
+                android:text="By signing up,you agree to UACTIV's"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/small_size"
+                custom:typeface="Brandon_bld" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/txt_turms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Turms and Condition "
+                    android:textColor="#90BEE2"
+                    android:textSize="@dimen/small_size"
+                    custom:typeface="Brandon_bld" />
+                <com.uactiv.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="and "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/small_size"
+                    custom:typeface="Brandon_bld" />
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/txt_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Privacy Policy."
+                    android:textColor="#90BEE2"
+                    android:textSize="@dimen/small_size"
+                    custom:typeface="Brandon_bld" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

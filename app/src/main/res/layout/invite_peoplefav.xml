@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/top_back_arrow"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_3" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/invite_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Invite"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            custom:typeface="Brandon_med" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/search_but"
+            android:layout_toRightOf="@+id/tvCancel"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/search_but"
+            android:background="@drawable/search_close_icon"
+            android:backgroundTint="@color/white"
+            android:visibility="gone" />
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/tvGroups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="Groups"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_3"
+            android:visibility="gone"
+            custom:typeface="Brandon_med" />
+
+        <ImageButton
+            android:id="@+id/search_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_search"
+            android:text="Groups"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_3"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fav_group_near_buts_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:orientation="horizontal">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/favorites_but"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.3"
+            android:background="@drawable/selector_invite_buts"
+            android:gravity="center"
+            android:padding="@dimen/dp_6"
+            android:text="Favourites"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/group_but"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.3"
+            android:background="@drawable/selector_invite_buts"
+            android:gravity="center"
+            android:padding="@dimen/dp_6"
+            android:text="Groups"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/near_but"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="0.3"
+            android:background="@drawable/selector_invite_buts"
+            android:gravity="center"
+            android:padding="@dimen/dp_6"
+            android:text="Near By"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            custom:typeface="Brandon_med" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fav_group_near_buts_lay"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <com.uactiv.widgets.CustomAutoCompleteTextView
+            android:id="@+id/editSearchs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/search_box"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Search"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/light_gray"
+            android:textSize="@dimen/text_size_3" />
+
+        <ImageView
+            android:id="@+id/searchClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:src="@drawable/search_close_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edit_lay"
+        android:layout_marginTop="2dp"
+        android:background="@color/sep_color" />
+
+    <com.uactiv.utils.EndlessRecyclerViewNew
+        android:id="@+id/favListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inviteLayout"
+        android:layout_below="@+id/view"
+        android:divider="@color/sep_color"
+        android:dividerHeight="1dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/inviteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green">
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Invite"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            custom:typeface="Brandon_med" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/loder_view" />
+
+    <LinearLayout
+        android:id="@+id/empty_view_no_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/no_favourites" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:text="@string/empty_view_no_fav"
+            android:textColor="@color/empty_font_color"
+            android:textSize="@dimen/empty_msg_text_size"
+            custom:typeface="Brandon_bld" />
+
+    </LinearLayout>
+
+    <include layout="@layout/inflate_no_internet_empty_view" />
+
+    <include layout="@layout/loder_view" />
+</RelativeLayout>

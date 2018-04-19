@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sep_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"
+        android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/profile_name_box"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_med" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"
+            android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+            android:background="@color/sep_color"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pickUpListrow_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/abc_button_padding_horizontal_material"
+            android:background="@android:color/white">
+
+            <com.alexzh.circleimageview.CircleImageView
+                android:id="@+id/img_logo"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/abc_button_inset_vertical_material"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_profile"
+                app:view_backgroundColor="@color/black_trans80"
+                app:view_borderColor="@android:color/white"
+                app:view_borderWidth="2dp"
+                app:view_shadowColor="@color/grey"
+                app:view_shadowDx="2dp"
+                app:view_shadowDy="0dp"
+                app:view_shadowRadius="2dp" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_logo"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_reg" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgRightArraw"
+                android:gravity="center"
+                android:paddingRight="@dimen/abc_button_inset_vertical_material"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_med" />
+
+            <ImageView
+                android:id="@+id/imgRightArraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+                android:background="@drawable/green_rht_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"
+            android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+            android:background="@color/sep_color"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pickUpListrow_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/abc_button_padding_horizontal_material"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <com.alexzh.circleimageview.CircleImageView
+                android:id="@+id/img_logo1"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/abc_button_inset_vertical_material"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_profile"
+                app:view_borderColor="@android:color/white"
+                app:view_borderWidth="2dp"
+                app:view_shadowColor="@color/grey"
+                app:view_shadowDx="2dp"
+                app:view_shadowDy="0dp"
+                app:view_shadowRadius="2dp"
+
+                />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_logo1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_logo1"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_reg" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tv_spot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgRightArrow1"
+                android:gravity="center"
+                android:paddingRight="@dimen/abc_button_inset_vertical_material"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_med" />
+
+            <ImageView
+                android:id="@+id/imgRightArrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+                android:background="@drawable/green_rht_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"
+            android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+            android:background="@color/sep_color"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seeAll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.uactiv.widgets.CustomButton
+                android:id="@+id/tv_seeAll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="See All"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                custom:typeface="Brandon_med" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

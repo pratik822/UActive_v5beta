@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sep_color">
+
+    <include
+        android:id="@+id/includeTop"
+        layout="@layout/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/includeTop">
+
+        <RelativeLayout
+            android:id="@+id/rrLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp">
+
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    class="com.uactiv.utils.WorkaroundMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/ly_event"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_100"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_profile"
+                        app:view_backgroundColor="@color/colorPrimary"
+                        app:view_borderColor="@android:color/white"
+                        app:view_borderWidth="2dp"
+                        app:view_shadowColor="@color/grey"
+                        app:view_shadowDx="2dp"
+                        app:view_shadowDy="0dp"
+                        app:view_shadowRadius="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:orientation="vertical"
+                        android:paddingTop="25dip">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/tvNamec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="3dp"
+                            card_view:cardCornerRadius="2dip">
+
+                            <com.uactiv.widgets.CustomTextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/name_gray"
+                                android:textSize="@dimen/abc_text_size_medium_material"
+                                custom:typeface="Brandon_med" />
+                        </android.support.v7.widget.CardView>
+
+                        <com.uactiv.widgets.CustomTextView
+                            android:id="@+id/tvProfileType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_rect_green"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:text="Hosting"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_2"
+                            custom:typeface="Brandon_bld" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ly_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/map"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/profile_name_box"
+                    android:paddingBottom="20dp">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvGameName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_5"
+                        custom:typeface="Brandon_med" />
+                    <LinearLayout
+                        android:id="@+id/show_status_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:layout_below="@+id/tvGameName"
+                        android:visibility="gone">
+                        <com.uactiv.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status: "
+                            android:textAllCaps="false"
+                            android:textSize="14sp"
+                            custom:typeface="Brandon_bld" />
+
+                        <com.uactiv.widgets.CustomTextView
+                            android:id="@+id/request_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/pendingcolor"
+                            android:textAllCaps="false"
+                            android:textSize="14sp"
+                            custom:typeface="Brandon_reg" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/show_status_bar"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/sep_color" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvGameDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1"
+                        android:autoLink="web"
+                        android:textColorLink="@color/holo_blue"
+                        android:paddingLeft="15dp"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imgCalendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvGameDescription"
+                        android:layout_below="@+id/tvGameDescription"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/calnder_icon" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgCalendar"
+                        android:layout_alignTop="@+id/imgCalendar"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgCalendar"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imgClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imgCalendar"
+                        android:layout_below="@+id/imgCalendar"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/timer_icon" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgClock"
+                        android:layout_alignLeft="@+id/tvDate"
+                        android:layout_alignTop="@+id/imgClock"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imgLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imgClock"
+                        android:layout_below="@+id/imgClock"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/location_pin_icon" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignLeft="@+id/tvTime"
+                        android:layout_alignTop="@+id/imgLocation"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_reg" />
+
+                    <ImageView
+                        android:id="@+id/imgSpots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLocation"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/tvDate"
+                        android:layout_toStartOf="@+id/tvDate"
+                        android:src="@drawable/user_icon_new" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvSpots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgSpots"
+                        android:layout_alignLeft="@+id/tvLocation"
+                        android:layout_alignTop="@+id/imgSpots"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_reg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_attendee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ly_event"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/profile_name_box"
+                    android:paddingBottom="20dp">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvAttending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_5"
+                        custom:typeface="Brandon_med" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tvAttending"
+                        android:background="@color/sep_color" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/category_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/view2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/category_recycle"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:background="@color/sep_color"
+                        android:visibility="invisible" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tv_spot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/category_recycle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_5"
+                        custom:typeface="Brandon_med" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inviteLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_attendee"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/profile_name_box"
+                    android:paddingBottom="20dp"
+                    android:visibility="gone">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvInvitesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text=""
+                        android:textColor="@color/name_gray"
+                        android:textSize="@dimen/text_size_5"
+                        custom:typeface="Brandon_med" />
+
+                    <View
+                        android:id="@+id/view2_invites"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tvInvitesCount"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/sep_color" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/invites_recycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/view2_invites"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayoutonebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/bottomBarText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1CD591"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_5"
+            custom:typeface="Brandon_med" />
+    </LinearLayout>
+
+   <include layout="@layout/loder_view"></include>
+</RelativeLayout>

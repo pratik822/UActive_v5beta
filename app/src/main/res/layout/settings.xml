@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout1"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rrLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDummy"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvPreferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_rect_gray"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Preferences"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvPreferences"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvSearchRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvPreferences"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="10dp"
+                android:text="Search Radius"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSearchRadius"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="0km"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_3"
+                custom:typeface="Brandon_med" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvRadius"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/custom_seekbar_line"
+                android:thumb="@drawable/custom_seekbar" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/seekBar1"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/spinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="15dp"
+                android:visibility="visible">
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/SpinGender"
+                    android:gravity="left|center"
+                    android:text="Gender Preference"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <Spinner
+                    android:id="@+id/SpinGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/label_btn" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/spinnerLayout"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/disablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2">
+
+
+                <RelativeLayout
+                    android:id="@+id/buddyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="15dp">
+
+                    <!--<ToggleButton
+                        android:id="@+id/tvReceiveBuddyUpChk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+
+                        android:background="@null"
+                        android:button="@drawable/toggle_button"
+                        android:gravity="center"
+                        android:textOff=""
+                        android:textOn="" />-->
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/tvReceiveBuddyUpChk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:padding="@dimen/dp_7"
+                        app:showText="false"
+                        app:theme="@style/Custom.Widget.SwitchCompat" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvReceiveBuddyUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/tvReceiveBuddyUpChk"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:text="Receive Buddy Up Requests"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_med" />
+                </RelativeLayout>
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvUserText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/buddyLayout"
+                    android:layout_below="@+id/buddyLayout"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="(User can send you Buddy Up requests)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tvUserText"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:id="@+id/notifyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:layout_marginTop="15dp">
+
+                    <!--<ToggleButton
+                        android:id="@+id/toggleButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:button="@drawable/toggle_button"
+                        android:textOff=""
+                        android:textOn="" />-->
+
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/toggleButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:padding="@dimen/dp_7"
+                        app:showText="false"
+                        app:theme="@style/Custom.Widget.SwitchCompat" />
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvPushNotify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toLeftOf="@+id/toggleButton2"
+                        android:gravity="left|center"
+                        android:text="Push Notifications"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_med" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/notifyLayout"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvAccSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view4"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_rect_gray"
+                    android:padding="2dp"
+                    android:text="Account Settings"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAccSettings"
+                    android:layout_marginTop="10dp"
+                    android:text="Email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEmail"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/round_rectangle"
+                    android:gravity="left|center"
+                    android:hint=""
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editEmail"
+                    android:layout_marginTop="10dp"
+                    android:text="Password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <com.uactiv.widgets.CustomEditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPassword"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/round_rectangle"
+                    android:gravity="left|center"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvChangePwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/editPassword"
+                    android:layout_below="@+id/editPassword"
+                    android:layout_marginTop="10dp"
+                    android:text="Change Password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tvChangePwd"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvLinkedAccounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/view5"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_rect_gray"
+                    android:padding="2dp"
+                    android:text="Linked Accounts"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <RelativeLayout
+                    android:id="@+id/fbLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLinkedAccounts"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_rectangle"
+                    android:padding="5dp">
+
+                    <com.uactiv.widgets.CustomTextView
+                        android:id="@+id/tvFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="Facebook"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_3"
+                        custom:typeface="Brandon_med" />
+
+                    <CheckBox
+                        android:id="@+id/checkFb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/fb_check"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/fbLayout"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <com.uactiv.widgets.CustomTextView
+                    android:id="@+id/tvSignOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_rectangle"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Sign out"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_3"
+                    custom:typeface="Brandon_med" />
+
+                <TextView
+                    android:id="@+id/dummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tvSignOut"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green">
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            custom:typeface="Brandon_med" />
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/tvSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            custom:typeface="Brandon_med" />
+    </RelativeLayout>
+
+    <include layout="@layout/loder_view"></include>
+
+
+</RelativeLayout>

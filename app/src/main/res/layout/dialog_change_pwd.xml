@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/editLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_name_box"
+        android:padding="5dp" >
+
+        <com.uactiv.widgets.CustomEditText
+            android:id="@+id/editOldPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textWebPassword"
+            android:background="@drawable/text_box_small"
+            android:hint="Enter old password"
+            android:padding="8dp"
+            custom:typeface="Brandon_reg"/>
+
+        <com.uactiv.widgets.CustomEditText
+            android:id="@+id/editNewPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editOldPwd"
+            android:layout_alignRight="@+id/editOldPwd"
+            android:layout_below="@+id/editOldPwd"
+            android:inputType="textWebPassword"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box_small"
+            android:hint="Enter new password"
+            android:padding="8dp"
+            custom:typeface="Brandon_reg"/>
+
+        <com.uactiv.widgets.CustomEditText
+            android:id="@+id/editConfirmPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editOldPwd"
+            android:layout_alignRight="@+id/editOldPwd"
+            android:layout_below="@+id/editNewPwd"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box_small"
+            android:hint="Enter confirm password"
+            android:inputType="textWebPassword"
+            android:padding="8dp"
+            custom:typeface="Brandon_reg"/>
+
+        <LinearLayout
+            android:id="@+id/lyLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editOldPwd"
+            android:layout_alignRight="@+id/editOldPwd"
+            android:layout_below="@+id/editConfirmPwd"
+            android:layout_marginTop="10dp" >
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rect_green"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_reg"/>
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rect_green"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                custom:typeface="Brandon_reg"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/lyLinear" />
+    </RelativeLayout>
+
+</RelativeLayout>

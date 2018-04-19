@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uactiv.widgets.CustomButton
+    android:id="@+id/button3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/buttonpressed_btn3_first"
+    android:minHeight="@dimen/abc_action_button_min_width_overflow_material"
+    android:text="Pick Up"
+    android:padding="@dimen/dp_10"
+    android:textColor="@color/button_text_color"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    custom:typeface="Brandon_med"
+    xmlns:custom="http://schemas.android.com/apk/res-auto" />

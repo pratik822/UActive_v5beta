@@ -1,0 +1,47 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scrollableview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sep_color" />
+
+    <me.henrytao.smoothappbarlayout.SmoothAppBarLayout
+        android:id="@+id/smooth_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dashboard_header_width">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_collapseMode="none">
+
+            <include layout="@layout/main_lay_header" />
+
+        </FrameLayout>
+
+    </me.henrytao.smoothappbarlayout.SmoothAppBarLayout>
+
+    <include layout="@layout/loder_view" />
+
+
+    <com.uactiv.widgets.CustomButton
+        android:id="@+id/bottomBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#1CD591"
+        android:text="Create Pick Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_5"
+        android:visibility="visible"
+        custom:typeface="Brandon_med" />
+
+</android.support.design.widget.CoordinatorLayout>

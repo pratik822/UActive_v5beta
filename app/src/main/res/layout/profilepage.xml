@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlayout">
+
+        <RelativeLayout
+            android:id="@+id/rrLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_320dp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:background="@color/sep_color"
+                android:scaleType="centerCrop"/>
+
+            <include
+                android:id="@+id/include_buddyup"
+                layout="@layout/include_profile_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/include_buddyup_details"
+                android:layout_alignRight="@+id/include_buddyup_details"
+                android:layout_below="@+id/include_buddyup_details"
+                android:layout_marginTop="@dimen/margin_neg_large"/>
+
+            <include
+                android:id="@+id/include_buddyup_details"
+                layout="@layout/inflate_buddyup_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginLeft="@dimen/margin_medium_size"
+                android:layout_marginRight="@dimen/margin_medium_size"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/margin_neg_large"/>
+
+            <com.uactiv.widgets.CustomTextView
+                android:id="@+id/tvPersonNames"
+                style="@style/ShadowStyleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/include_buddyup_details"
+                android:layout_alignLeft="@+id/include_buddyup_details"
+                android:layout_marginBottom="@dimen/margin_extralarge_size"
+                android:text="Hello "
+                android:shadowRadius="2"
+                android:shadowColor="@color/black"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_8"
+                custom:typeface="Brandon_med"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.uactiv.widgets.CustomButton
+        android:id="@+id/rlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#1CD591"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_4"
+        custom:typeface="Brandon_med"/>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_name_box" >
+
+        <com.uactiv.widgets.CustomEditText
+            android:id="@+id/editGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter group name"
+            custom:typeface="Brandon_reg">
+        </com.uactiv.widgets.CustomEditText>
+        <View
+            android:layout_below="@+id/editGroupName"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_alignLeft="@+id/editGroupName"
+            android:layout_alignRight="@+id/editGroupName"
+            android:layout_width="wrap_content"
+            android:background="@color/grey"
+            android:layout_height="0.5dp"></View>
+
+        <LinearLayout
+            android:id="@+id/linLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editGroupName"
+            android:layout_alignRight="@+id/editGroupName"
+            android:layout_below="@+id/editGroupName"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <com.uactiv.widgets.CustomButton
+                android:id="@+id/tvCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:minHeight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rect_green"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_reg"/>
+
+            <com.uactiv.widgets.CustomButton
+                android:id="@+id/tvOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:minHeight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rect_green"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Ok"
+                android:textColor="@color/white"
+                custom:typeface="Brandon_reg"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/linLayout"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

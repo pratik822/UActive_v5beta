@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/sep_color"
+    tools:context="com.uactiv.activity.PickupListing">
+    <RelativeLayout
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:visibility="invisible"
+            android:src="@drawable/top_back_arrow" />
+
+        <com.uactiv.widgets.CustomTextView
+            android:id="@+id/tvGroupTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Discover"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_4"
+            custom:typeface="Brandon_med"/>
+
+        <com.uactiv.widgets.CustomButton
+            android:id="@+id/tvGroupNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="New"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_3"
+            android:background="@null"
+            android:textAllCaps="false"
+            custom:typeface="Brandon_med"/>
+    </RelativeLayout>
+    <com.felipecsl.gifimageview.library.GifImageView
+        android:id="@+id/gifLoader"
+        android:layout_width="@dimen/loader_height"
+        android:layout_height="@dimen/loader_width"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_below="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.uactiv.utils.EndlessRecyclerViewNew
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.uactiv.utils.EndlessRecyclerViewNew>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+</RelativeLayout>
